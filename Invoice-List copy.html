@@ -9,7 +9,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="https://theuniqueitsolution.com/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://theuniqueitsolution.com/favicon.ico" type="image/x-icon">
-    <title>Basic Tables | Paris - Premium Admin Template By Pixelstrap</title>
+    <title>Form Validation | Paris - Premium Admin Template By Pixelstrap</title>
     <!-- Google font-->
     <link href="../../css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
 
@@ -30,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/slick.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/animate.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/bootstrap.css">
@@ -42,12 +43,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/sweetalert2.css">
   </head>
-  <body>
-    <!-- tap on top starts-->
-    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
-    <!-- tap on tap ends--> 
+  <body> 
     <!-- loader starts-->
     <div class="loader-wrapper">
       <div class="theme-loader"> 
@@ -62,6 +59,9 @@
       </div>
     </div>
     <!-- loader ends-->
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- Page Header Start-->
@@ -133,7 +133,7 @@
               </div>
             </div>
             <div class="logo-icon-wrapper"><a href="index.html"><img class="for-light" width="30" src="https://theuniqueitsolution.com/favicon.ico" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo-icon-dark.png" alt=""></a></div>
-             <nav class="sidebar-main">
+            <nav class="sidebar-main">
               <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
               <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
@@ -175,19 +175,69 @@
         </div>
         <!-- Page Sidebar Ends-->
         <div class="page-body">
+             <div class="container-fluid">
+             <div class="row mt-100">
+              <!-- Filter Button Start -->
+                <div class="col-lg-12 d-flex justify-content-start ms-md-auto mb-3">
+                  <button class="btn btn-primary btn-lg d-flex px-3 py-0" type="button" id="filter-button">
+                    <div class="icon me-2 mt-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 64 64" id="filter">
+                        <polygon fill="none" stroke="white" stroke-miterlimit="10" stroke-width="4" points="2 6 2 10 26 34 26 58 38 58 38 34 62 10 62 6 2 6"></polygon>
+                      </svg>
+                    </div>
+                    <div class="text-white" id="text"><span class="fs-15">Filter</span></div>
+                  </button>
+                </div>
+               <!-- Filter Button End -->
+            </div>
+            <div class="row mb-2" id="filter-form" style="height: 100% !important; max-height: 100% !important;">
+              <!-- Filter Form Start -->
+              <div class="col-sm-12">
+                <div class="card height-equal shadow">
+                  <div class="card-body basic-wizard important-validation">
+                    <div id="msform p-3">
+                      <form class="stepper-one row needs-validation custom-input" novalidate=""> 
+                        <div class="col-md-4 position-relative">
+                          <label class="form-label" for="fromDate">From Date</label>
+                          <input class="form-control" id="fromDate" type="date" required>
+                          <div class="invalid-tooltip">Please select a valid From Date.</div>
+                        </div>
+
+                        <div class="col-md-4 position-relative">
+                          <label class="form-label" for="toDate">To Date</label>
+                          <input class="form-control" id="toDate" type="date" required>
+                          <div class="invalid-tooltip">Please select a valid To Date.</div>
+                        </div>
+
+                        <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
+                          <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
+                          <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Filter Form end -->
+            </div>
+          </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid basic_table">
-            <div class="row mt-100">
-               <div class="col-md-6">
-                <h3>ECO SCODA COVENTRY – <span class="text-gray">Color Management</span></h3>
-               </div>
-               <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Invoice Records</h3>
+              </div>
+              <div class="col-md-6">
                  <div class="feature-products">
-                <div class="common-f-start justify-content-md-end mb-3"><div class="job-filter me-2">
-                    <div class="faq-form">
+                <div class="common-f-start justify-content-md-end mb-3">
+                  <div class="faq-form me-2">
                      <input class="form-control border-dark" type="text" placeholder="Search.."><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     </div>
-                  </div><a class="btn btn-primary f-w-500" href="add-Color.html"><i class="fa fa-plus pe-2"></i>Add Color</a></div>
+                  <a href="dummy.pdf" download title="Download PDF" class="btn d-flex align-items-center gap-2 px-3 py-2 exportbtn">
+                    <i class="fas fa-file-pdf" style="color: #28a745;"></i>
+                    <span>Export</span>
+                  </a>
+                </div>
               </div>
                </div>
               <div class="col-sm-12">
@@ -197,146 +247,122 @@
                       <thead>
                         <tr class="border-bottom-primary">
                           <th scope="col">No</th>
-                          <th scope="col">Color Name</th>
-                          <th scope="col">Color Image</th>
-                          <th scope="col">Sequence</th>
-                          <th scope="col">Serial No</th>
-                          <th scope="col">Price</th>
-                          <th scope="col">Location</th>
-                          <th scope="col">Stock</th>
+                          <th scope="col">Client Name</th>
+                          <th scope="col">Invoice Number</th>
+                          <th scope="col">Item</th>
+                          <th scope="col">Download Invoice</th>
                           <th scope="col">Action</th>
+                          <th scope="col">Invoice Date</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                           <th scope="row">1</th>
-                           <td>Rose Taupe</td>
-                           <td><img src="/assets/images/color-leather/RoseTaupe.png" alt="Black Carbon" width="100" class="img-thumbnail"></td>
-                           <td>1</td>
-                           <td>LCB001</td>
-                                                
-                           <!-- Price -->
-                           <td>
-                             <div class="d-flex flex-column">
-                               <span class="badge btn-outline-dark">₹100 <small>/ Roll</small></span>
-                               <span class="badge btn-outline-dark mt-1 ms-0">₹70 <small>/ Meter</small></span>
-                             </div>
-                           </td>
-                       
-                           <!-- Row / Box -->
-                           <td>
-                             <div class="text-nowrap">
-                               <span class="text-muted">Row:</span> <strong>A</strong><br>
-                               <span class="text-muted">Box:</span> <strong>1</strong>
-                             </div>
-                           </td>
-                       
-                           <!-- Stock -->
-                           <td>
-                             <div class="text-success fw-semibold">25 Rolls</div>
-                             <div class="text-success fw-semibold">30 Meters</div>
-                           </td>
-                       
-                           <!-- Actions -->
-                           <td>
-                              <a class="btn btn-sm btn-soft-primary me-1" href="add-Color.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Color">
-                                <i class="fas fa-pen"></i>
-                              </a>
-                              <a class="btn btn-sm btn-soft-danger deleteItem" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Color">
-                                <i class="fas fa-trash"></i>
-                              </a>
+                          <tr>
+                            <td>1</td>
+                            <td>John Smith</td>
+                            <td>INV-1001</td>
+                            <td>Website Development</td>
+                            <td><a href="invoice1.pdf" download class="btn btn-sm btn-outline-success"><i class="fas fa-download me-1"></i>Download</a></td>
+                            <td>
+                              <div class="dropdown">
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="dropdown">
+                                  <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item view-action" href="#"><i class="fas fa-eye me-1"></i> View</a></li>
+                                  <li><a class="dropdown-item edit-action" href="Add-Co-Ordinator-management.html"><i class="fas fa-edit me-1"></i> Edit</a></li>
+                                  <li><a class="dropdown-item deleteItem delete-action" href="#"><i class="fas fa-trash me-1"></i> Delete</a></li>
+                                </ul>
+                              </div>
                             </td>
-
-
-                         </tr>
-                     
-                         <tr>
-                           <th scope="row">2</th>
-                           <td>Beige Sandstone</td>
-                           <td><img src="/assets/images/color-leather/BeigeSandstone.jpg" alt="Tan Premium" width="100" class="img-thumbnail"></td>
-                           <td>2</td>
-                           <td>LTP002</td>
-                        
-                           <!-- Price -->
-                           <td>
-                             <div class="d-flex flex-column">
-                               <span class="badge btn-outline-dark">₹90 <small>/ Roll</small></span>
-                               <span class="badge btn-outline-dark mt-1 ms-0">₹60 <small>/ Meter</small></span>
-                             </div>
-                           </td>
-                       
-                           <!-- Row / Box -->
-                           <td>
-                             <div class="text-nowrap">
-                               <span class="text-muted">Row:</span> <strong>B</strong><br>
-                               <span class="text-muted">Box:</span> <strong>3</strong>
-                             </div>
-                           </td>
-                       
-                           <!-- Stock -->
-                           <td>
-                             <div class="text-warning fw-semibold">15 Rolls</div>
-                             <div class="text-warning fw-semibold">20 Meters</div>
-                           </td>
-                       
-                           <!-- Actions -->
-                           <td>
-                              <a class="btn btn-sm btn-soft-primary me-1" href="add-Color.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Color">
-                                <i class="fas fa-pen"></i>
-                              </a>
-                              <a class="btn btn-sm btn-soft-danger deleteItem" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Color">
-                                <i class="fas fa-trash"></i>
-                              </a>
+                            <td>01-Aug-2025</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Priya Patel</td>
+                            <td>INV-1002</td>
+                            <td>SEO Services</td>
+                            <td><a href="invoice2.pdf" download class="btn btn-sm btn-outline-success"><i class="fas fa-download me-1"></i>Download</a></td>
+                            <td>
+                              <div class="dropdown">
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="dropdown">
+                                  <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item view-action" href="#"><i class="fas fa-eye me-1"></i> View</a></li>
+                                  <li><a class="dropdown-item edit-action" href="Add-Co-Ordinator-management.html"><i class="fas fa-edit me-1"></i> Edit</a></li>
+                                  <li><a class="dropdown-item deleteItem delete-action" href="#"><i class="fas fa-trash me-1"></i> Delete</a></li>
+                                </ul>
+                              </div>
                             </td>
-
-                         </tr>
-                     
-                         <tr>
-                           <th scope="row">3</th>
-                           <td>Graphite Grey</td>
-                           <td><img src="/assets/images/color-leather/GraphiteGrey.jpg" alt="Beige Classic" width="100" class="img-thumbnail"></td>
-                           <td>3</td>
-                           <td>LBC003</td>
-                        
-                           <!-- Price -->
-                           <td>
-                             <div class="d-flex flex-column">
-                               <span class="badge btn-outline-dark">₹110 <small>/ Roll</small></span>
-                               <span class="badge btn-outline-dark mt-1 ms-0">₹75 <small>/ Meter</small></span>
-                             </div>
-                           </td>
-                       
-                           <!-- Row / Box -->
-                           <td>
-                             <div class="text-nowrap">
-                               <span class="text-muted">Row:</span> <strong>C</strong><br>
-                               <span class="text-muted">Box:</span> <strong>2</strong>
-                             </div>
-                           </td>
-                       
-                           <!-- Stock -->
-                           <td>
-                             <div class="text-danger fw-semibold">0 Rolls</div>
-                             <div class="text-success fw-semibold">10 Meters</div>
-                           </td>
-                       
-                           <!-- Actions -->
-                          <td>
-                              <a class="btn btn-sm btn-soft-primary me-1" href="add-Color.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Color">
-                                <i class="fas fa-pen"></i>
-                              </a>
-                              <a class="btn btn-sm btn-soft-danger deleteItem" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Color">
-                                <i class="fas fa-trash"></i>
-                              </a>
+                            <td>28-Jul-2025</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Ahmed Khan</td>
+                            <td>INV-1003</td>
+                            <td>Mobile App Design</td>
+                            <td><a href="invoice3.pdf" download class="btn btn-sm btn-outline-success"><i class="fas fa-download me-1"></i>Download</a></td>
+                            <td>
+                              <div class="dropdown">
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="dropdown">
+                                  <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item view-action" href="#"><i class="fas fa-eye me-1"></i> View</a></li>
+                                  <li><a class="dropdown-item edit-action" href="Add-Co-Ordinator-management.html"><i class="fas fa-edit me-1"></i> Edit</a></li>
+                                  <li><a class="dropdown-item deleteItem delete-action" href="#"><i class="fas fa-trash me-1"></i> Delete</a></li>
+                                </ul>
+                              </div>
                             </td>
-
-                         </tr>
+                            <td>25-Jul-2025</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>Ravi Mehta</td>
+                            <td>INV-1004</td>
+                            <td>Digital Marketing</td>
+                            <td><a href="invoice4.pdf" download class="btn btn-sm btn-outline-success"><i class="fas fa-download me-1"></i>Download</a></td>
+                            <td>
+                              <div class="dropdown">
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="dropdown">
+                                  <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item view-action" href="#"><i class="fas fa-eye me-1"></i> View</a></li>
+                                  <li><a class="dropdown-item edit-action" href="Add-Co-Ordinator-management.html"><i class="fas fa-edit me-1"></i> Edit</a></li>
+                                  <li><a class="dropdown-item deleteItem delete-action" href="#"><i class="fas fa-trash me-1"></i> Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                            <td>20-Jul-2025</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>Simran Kaur</td>
+                            <td>INV-1005</td>
+                            <td>UI/UX Redesign</td>
+                            <td><a href="invoice5.pdf" download class="btn btn-sm btn-outline-success"><i class="fas fa-download me-1"></i>Download</a></td>
+                            <td>
+                              <div class="dropdown">
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="dropdown">
+                                  <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item view-action" href="#"><i class="fas fa-eye me-1"></i> View</a></li>
+                                  <li><a class="dropdown-item edit-action" href="Add-Co-Ordinator-management.html"><i class="fas fa-edit me-1"></i> Edit</a></li>
+                                  <li><a class="dropdown-item deleteItem delete-action" href="#"><i class="fas fa-trash me-1"></i> Delete</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                            <td>15-Jul-2025</td>
+                          </tr>
                       </tbody>
                     </table>
                   </div>
+                  
                 </div>
               </div>
-              <div class="col-md-12">
+             <div class="col-md-12">
                 <div class="card height-equal shadow-sm">
                   <div class="card-body">
                     <div class="row">
@@ -368,8 +394,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
           <!-- Container-fluid Ends-->
         </div>
         <!-- footer start-->
@@ -384,6 +408,7 @@
         </footer>
       </div>
     </div>
+
     <script>
   document.addEventListener('DOMContentLoaded', function () {
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
@@ -393,30 +418,30 @@
   });
 </script>
 
+
          <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const deleteLinks = document.querySelectorAll('.deleteItem');
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterBtn = document.getElementById("filter-button");
+    const filterForm = document.getElementById("filter-form");
+    const clearBtn = document.getElementById("nextbtn");
 
-    deleteLinks.forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default anchor behavior
+    // Initially hide the filter form
+    filterForm.style.display = "none";
 
-        Swal.fire({
-          title: 'Are you sure?',
-          text: "You won't be able to revert this!",
-          icon: 'warning',
-          showCancelButton: true,
-          confirmButtonColor: '#16c7f9',
-          cancelButtonColor: '#fc4438',
-          confirmButtonText: 'Yes, delete it!',
-          cancelButtonText: 'Cancel'
-        }).then((result) => {
-          if (result.isConfirmed) {
-            // You can add your delete logic here
-            Swal.fire('Deleted!', 'Your item has been deleted.', 'success');
-          }
-        });
-      });
+    // Toggle filter form on button click
+    filterBtn.addEventListener("click", () => {
+      if (filterForm.style.display === "none") {
+        filterForm.style.display = "flex"; // or "block" for vertical layout
+      } else {
+        filterForm.style.display = "none";
+      }
+    });
+
+    // Clear all inputs and selects
+    clearBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const form = clearBtn.closest("form");
+      form.reset();
     });
   });
 </script>
@@ -438,12 +463,14 @@
     <script src="./assets/js/slick/slick.min.js"></script>
     <script src="./assets/js/slick/slick.js"></script>
     <script src="./assets/js/header-slick.js"></script>
+    <script src="./assets/js/form-validation-custom.js"></script>
+    <script src="./assets/js/height-equal.js"></script>
+    <script src="./assets/js/custom-animated-form.js"></script>
+    <script src="./assets/js/custom-pwd-validation.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/script1.js"></script>
     <script src="./assets/js/theme-customizer/customizer.js"></script>
-    <!-- SweetAlert2 CDN -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

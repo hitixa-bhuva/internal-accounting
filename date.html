@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Date Range Picker Demo</title>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
+  <!-- Moment.js (required by daterangepicker) -->
+<script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+ 
+  <!-- Daterangepicker CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+ 
+  <!-- Daterangepicker JS -->
+<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+ 
+  <style>
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      margin: 50px;
+
+    }
+
+    label {
+
+      font-weight: bold;
+
+    }
+
+    input {
+
+      padding: 8px;
+
+      width: 250px;
+
+      font-size: 16px;
+
+    }
+</style>
+</head>
+<body>
+ 
+  <label for="daterange">Select Date Range:</label><br><br>
+<input type="text" name="daterange" id="daterange" />
+ 
+  <script>
+
+    $(function() {
+
+      $('input[name="daterange"]').daterangepicker({
+
+        opens: 'left'
+
+      }, function(start, end, label) {
+
+        console.log("A new date selection was made: " 
+
+                    + start.format('YYYY-MM-DD') 
+
+                    + ' to ' + end.format('YYYY-MM-DD'));
+
+      });
+
+    });
+</script>
+ 
+</body>
+</html>
+
+ 
