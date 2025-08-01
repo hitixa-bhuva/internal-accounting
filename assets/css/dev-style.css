@@ -453,3 +453,6 @@
         .exportbtn{
             border: 1px solid #28a745; background-color: #e6f4ea; color: #28a745;
         }
+        .main-logo-img{
+            max-width: 160px !important;
+        }

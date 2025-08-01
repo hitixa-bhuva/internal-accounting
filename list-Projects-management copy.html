@@ -181,31 +181,91 @@
         </div>
         <!-- Page Sidebar Ends-->
         <div class="page-body">
-       <div class="container-fluid basic_table">
-          <div class="row mt-100">
-            <div class="col-md-6">
-              <h3>Co-Ordinator List</h3>
-            </div>
-            <div class="col-md-6">
-              <div class="feature-products">
-                <div class="common-f-start justify-content-md-end mb-3">
-                  <div class="job-filter me-2">
-                    <div class="faq-form">
-                      <input class="form-control border-dark" type="text" placeholder="Search..">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search search-icon">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                      </svg>
-                    </div>
-                  </div>
-                  <a class="btn btn-primary f-w-500" href="Add-Co-Ordinator-management.html">
-                    <i class="fa fa-plus pe-2"></i>Add Co-Ordinator
-                  </a>
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h3>Project List</h3>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+          <div class="container-fluid">
+             <div class="row">
+              <!-- Filter Button Start -->
+                 <div class="col-lg-12 d-flex justify-content-start ms-md-auto mb-3">
+                  <button class="btn btn-primary btn-lg d-flex px-3 py-0" type="button" id="filter-button">
+                    <div class="icon me-2 mt-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 64 64" id="filter">
+                        <polygon fill="none" stroke="white" stroke-miterlimit="10" stroke-width="4" points="2 6 2 10 26 34 26 58 38 58 38 34 62 10 62 6 2 6"></polygon>
+                      </svg>
+                    </div>
+                    <div class="text-white" id="text"><span class="fs-15">Filter</span></div>
+                  </button>
+                </div>
+               <!-- Filter Button End -->
+            </div>
+            <div class="row mb-2" id="filter-form" style="height: 100% !important; max-height: 100% !important;">
+              <!-- Filter Form Start -->
+              <div class="col-sm-12 p-0">
+                <div class="card height-equal shadow">
+                  <div class="card-body basic-wizard important-validation">
+                    <div id="msform p-3">
+                      <form class="stepper-one row needs-validation custom-input" novalidate=""> 
+                      <div class="col-md-6 position-relative">
+                        <label class="form-label" for="companyName">Company Name</label>
+                        <select class="form-select" id="companyName">
+                          <option selected disabled value="">Choose...</option>
+                           <option value="IT Solution">IT Solution</option>
+                           <option value="EEM Branding">EEM Branding</option>
+                           <option value="Ahmedabad Media">Ahmedabad Media</option>
+                           <option value="Brilliance International">Brilliance International</option>
+                           <option value="MetaCore IT Solution">MetaCore IT Solution</option>
+                           <option value="Exciller">Exciller</option>
+                           <option value="Gamizcera">Gamizcera</option>
+                           <option value="Kerol Turf">Kerol Turf</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 position-relative">
+                        <label class="form-label" for="coordinator">Co-Ordinator</label>
+                        <select class="form-select" id="coordinator">
+                          <option selected disabled value="">Choose...</option>
+                          <option value="Jaimin">Jaimin</option>
+                          <option value="Nirav">Nirav</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 position-relative">
+                        <label class="form-label" for="coordinator">Project Status</label>
+                        <select class="form-select" id="coordinator">
+                          <option selected disabled value="">Choose...</option>
+                          <option value="Active">Active</option>
+                          <option value="Inactive">Inactive</option>
+                        </select>
+                      </div>
+                    <div class="col-md-12 mt-2"> 
+                         <label class="form-label" for="coordinator">Project Type</label>
+                        <div class="card-body"> 
+                          <form>
+                            <input class="some_class_name" name="input-custom-dropdown" placeholder="write some tags" value="Web Site, Application">
+                          </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                          <label for="daterange">Select Date Range:</label><br><br>
+                            <input type="text" name="daterange" id="daterange" />
+                    </div>
+                        <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
+                          <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
+                          <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Filter Form end -->
+            </div>
+          </div>
           <!-- Container-fluid starts-->
           <div class="col-sm-12">
               <div class="card shadow">
@@ -214,39 +274,40 @@
                     <thead>
                       <tr class="border-bottom-primary">
                         <th scope="col">No</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Contact Number</th>
-                        <th scope="col">Email Company</th>
-                        <th scope="col">Active</th>
+                        <th scope="col">Project Name</th>
+                        <th scope="col">Company Name</th>
+                        <th scope="col">Co-Ordinator Details</th>
+                        <th scope="col">Project Type</th>
                         <th scope="col">Action</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>Jatin Mehta</td>
-                        <td>9876543210</td>
-                        <td>jatin@uniquesolutions.com</td>
-                        <td><span class="badge bg-success">Yes</span></td>
-                        <td>
+                      <tr class="border-bottom-primary">
+                          <td>1</td>
+                          <td>Website Redesign</td>
+                          <td>MetaCore IT Solution</td>
+                          <td>Ravi Mehta<br><small>+91 98765 43210</small></td>
+                          <td><span class="badge bg-primary">Web Development</span></td>
+                          <td>
                             <div class="dropdown">
                               <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="dropdown">
                                 <i class="fas fa-ellipsis-v"></i>
                               </button>
                               <ul class="dropdown-menu">
                                 <li><a class="dropdown-item view-action" href="#"><i class="fas fa-eye"></i> View</a></li>
-                                <li><a class="dropdown-item edit-action" href="Add-Co-Ordinator-management.html"><i class="fas fa-edit"></i> Edit</a></li>
+                                <li><a class="dropdown-item edit-action" href="add-Client-management.html"><i class="fas fa-edit"></i> Edit</a></li>
                                 <li><a class="dropdown-item deleteItem delete-action" href="#"><i class="fas fa-trash"></i> Delete</a></li>
                               </ul>
                             </div>
                           </td>
                         </tr>
-                        <tr>
+
+                        <tr class="border-bottom-primary">
                           <td>2</td>
-                          <td>Heena Patel</td>
-                          <td>9123456789</td>
-                          <td>heena@itsolution.in</td>
-                          <td><span class="badge bg-success">Yes</span></td>
+                          <td>Mobile App for Food Delivery</td>
+                          <td>AhmedabadMedia</td>
+                          <td>Priya Shah<br><small>+91 90123 45678</small></td>
+                          <td><span class="badge bg-success">Mobile App</span></td>
                           <td>
                             <div class="dropdown">
                               <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="dropdown">
@@ -254,37 +315,39 @@
                               </button>
                               <ul class="dropdown-menu">
                                 <li><a class="dropdown-item view-action" href="#"><i class="fas fa-eye"></i> View</a></li>
-                                <li><a class="dropdown-item edit-action" href="Add-Co-Ordinator-management.html"><i class="fas fa-edit"></i> Edit</a></li>
+                                <li><a class="dropdown-item edit-action" href="add-Client-management.html"><i class="fas fa-edit"></i> Edit</a></li>
                                 <li><a class="dropdown-item deleteItem delete-action" href="#"><i class="fas fa-trash"></i> Delete</a></li>
                               </ul>
                             </div>
                           </td>
-                            </tr>
-                            <tr>
-                              <td>3</td>
-                              <td>Amit Joshi</td>
-                              <td>9988776655</td>
-                              <td>amit@eembranding.com</td>
-                              <td><span class="badge bg-danger">No</span></td>
-                              <td>
+                        </tr>
+
+                        <tr class="border-bottom-primary">
+                          <td>3</td>
+                          <td>Branding & Identity</td>
+                          <td>EEM Branding</td>
+                          <td>Karan Patel<br><small>+91 99887 66554</small></td>
+                          <td><span class="badge bg-info">Digital Marketing</span></td>
+                          <td>
                             <div class="dropdown">
                               <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="dropdown">
                                 <i class="fas fa-ellipsis-v"></i>
                               </button>
                               <ul class="dropdown-menu">
                                 <li><a class="dropdown-item view-action" href="#"><i class="fas fa-eye"></i> View</a></li>
-                                <li><a class="dropdown-item edit-action" href="Add-Co-Ordinator-management.html"><i class="fas fa-edit"></i> Edit</a></li>
+                                <li><a class="dropdown-item edit-action" href="add-Client-management.html"><i class="fas fa-edit"></i> Edit</a></li>
                                 <li><a class="dropdown-item deleteItem delete-action" href="#"><i class="fas fa-trash"></i> Delete</a></li>
                               </ul>
                             </div>
                           </td>
                         </tr>
-                        <tr>
+
+                        <tr class="border-bottom-primary">
                           <td>4</td>
-                          <td>Riya Shah</td>
-                          <td>9011223344</td>
-                          <td>riya@ahmedabadmedia.com</td>
-                          <td><span class="badge bg-success">Yes</span></td>
+                          <td>SEO Optimization</td>
+                          <td>Unique IT Solution</td>
+                          <td>Neha Desai<br><small>+91 91234 56789</small></td>
+                          <td><span class="badge bg-warning">SEO</span></td>
                           <td>
                             <div class="dropdown">
                               <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="dropdown">
@@ -292,18 +355,19 @@
                               </button>
                               <ul class="dropdown-menu">
                                 <li><a class="dropdown-item view-action" href="#"><i class="fas fa-eye"></i> View</a></li>
-                                <li><a class="dropdown-item edit-action" href="Add-Co-Ordinator-management.html"><i class="fas fa-edit"></i> Edit</a></li>
+                                <li><a class="dropdown-item edit-action" href="add-Client-management.html"><i class="fas fa-edit"></i> Edit</a></li>
                                 <li><a class="dropdown-item deleteItem delete-action" href="#"><i class="fas fa-trash"></i> Delete</a></li>
                               </ul>
                             </div>
                           </td>
                         </tr>
-                        <tr>
+
+                        <tr class="border-bottom-primary">
                           <td>5</td>
-                          <td>Kunal Verma</td>
-                          <td>9090909090</td>
-                          <td>kunal@mediaspark.io</td>
-                          <td><span class="badge bg-danger">No</span></td>
+                          <td>UI/UX Design Overhaul</td>
+                          <td>AhmedabadMedia</td>
+                          <td>Jatin Soni<br><small>+91 98765 12345</small></td>
+                          <td><span class="badge bg-danger">UI/UX Design</span></td>
                           <td>
                             <div class="dropdown">
                               <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="dropdown">
@@ -311,12 +375,13 @@
                               </button>
                               <ul class="dropdown-menu">
                                 <li><a class="dropdown-item view-action" href="#"><i class="fas fa-eye"></i> View</a></li>
-                                <li><a class="dropdown-item edit-action" href="Add-Co-Ordinator-management.html"><i class="fas fa-edit"></i> Edit</a></li>
+                                <li><a class="dropdown-item edit-action" href="add-Client-management.html"><i class="fas fa-edit"></i> Edit</a></li>
                                 <li><a class="dropdown-item deleteItem delete-action" href="#"><i class="fas fa-trash"></i> Delete</a></li>
                               </ul>
                             </div>
                           </td>
                         </tr>
+
                     </tbody>
                   </table>
                 </div>
@@ -372,103 +437,6 @@
         </footer>
       </div>
     </div>
-
-    <!-- Coordinator View Modal -->
-<div class="modal fade" id="coordinatorViewModal" tabindex="-1" aria-labelledby="coordinatorViewModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="coordinatorViewModalLabel">Coordinator Details</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" id="coordinatorModalContent">
-         <div class="coordinator-management-view-container">
-        <div class="coordinator-management-view-header">
-            <h1>Coordinator Details</h1>
-            <p>Complete profile information and account details</p>
-        </div>
-
-        <div class="coordinator-management-view-content">
-            <div class="coordinator-management-view-details-grid">
-                <!-- Personal Details Card -->
-                <div class="coordinator-management-view-card">
-                    <h2 class="coordinator-management-view-card-title">Personal Details</h2>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Full Name</span>
-                        <span class="coordinator-management-view-field-value">John Alexander Smith</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Contact Number</span>
-                        <span class="coordinator-management-view-field-value">+1 (555) 123-4567</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Company Email</span>
-                        <span class="coordinator-management-view-field-value">john.smith@company.com</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Personal Email</span>
-                        <span class="coordinator-management-view-field-value">john.smith.personal@email.com</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Joining Date</span>
-                        <span class="coordinator-management-view-field-value">March 15, 2023</span>
-                    </div>
-                </div>
-
-                <!-- Account Details Card -->
-                <div class="coordinator-management-view-card">
-                    <h2 class="coordinator-management-view-card-title">Account Details</h2>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Account Number</span>
-                        <span class="coordinator-management-view-field-value">1234567890123456</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">IFSC Code</span>
-                        <span class="coordinator-management-view-field-value">HDFC0001234</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Account Holder Name</span>
-                        <span class="coordinator-management-view-field-value">John Alexander Smith</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Bank Name</span>
-                        <span class="coordinator-management-view-field-value">HDFC Bank Limited</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Role</span>
-                        <span class="coordinator-management-view-field-value">Senior Project Coordinator</span>
-                    </div>
-                </div>
-
-                <!-- Active Badge Section -->
-                <div class="coordinator-management-view-badge-section">
-                    <div class="coordinator-management-view-badge-content">
-                        <div class="coordinator-management-view-badge-status">ACTIVE</div>
-                        <div class="coordinator-management-view-holder-contact">
-                            <strong>Holder Contact:</strong>
-                            +1 (555) 987-6543
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.view-action').forEach(function (el) {
-      el.addEventListener('click', function (e) {
-        e.preventDefault();
-        const modal = new bootstrap.Modal(document.getElementById('coordinatorViewModal'));
-        modal.show();
-      });
-    });
-  });
-</script>
-
     <script>
     document.addEventListener('DOMContentLoaded', function () {
       const deleteLinks = document.querySelectorAll('.deleteItem');

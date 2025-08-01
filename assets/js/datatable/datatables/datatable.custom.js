@@ -805,7 +805,7 @@
       ],
     });
     $("#advance-5").DataTable({
-      dom: '<"top"iflp<"clear">>rt<"bottom"iflp<"clear">>',
+      dom: '<"top"iflp<"clear">rt<"bottom"iflp<"clear">',
     });
     $("#advance-6").DataTable({
       columnDefs: [
