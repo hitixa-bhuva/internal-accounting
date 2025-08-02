@@ -136,7 +136,7 @@ const groupChartOption = {
     labels: {
       show: true,
       style: {
-        colors: '#1C1B20',
+        colors: '#4169e1',
         fontWeight: 600,
         fontFamily: "Manrope, sans-serif",
       },
@@ -277,7 +277,7 @@ var countryChart = {
     labels: {
       style: {
         fontWeight: 600,
-        colors: "#1C1B20",
+        colors: "#4169e1",
         fontFamily: "Manrope, sans-serif",
         fontSize: 16,
       },

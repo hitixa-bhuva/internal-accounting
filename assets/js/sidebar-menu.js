@@ -17,7 +17,7 @@ $(document).ready(function () {
           if ($(this).hasClass("active")) {
               icon.css("color", "#fff");
           } else {
-              icon.css("color", "#1C1B20"); 
+              icon.css("color", "#4169e1"); 
           }
       });
   }

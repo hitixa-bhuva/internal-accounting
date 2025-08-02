@@ -191,7 +191,7 @@ var options = {
     labels: {
       show: true,
       style: {
-        colors: '#1C1B20',
+        colors: '#4169e1',
         fontWeight: 600,
         fontFamily: "Manrope, sans-serif",
       },
@@ -357,7 +357,7 @@ var options = {
       stops: [0, 60],
     },
   },
-  colors: ["#1C1B20"],
+  colors: ["#4169e1"],
   tooltip: {
     theme: "dark",
     fixed: {

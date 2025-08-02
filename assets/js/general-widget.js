@@ -309,7 +309,7 @@ var options = {
   xaxis: {
     categories: ["Mobile", "Men Fishion", "Women Fishion", "Beauty", "Health", "Sports", "Music", "Kids"]
   },
-  colors: ["#94C4FF", "#FFC38D", "#1C1B20", "#C5AFF6", "#8DD4B4", "#EB8A93", "#94C4FF", "#FFC38D"],
+  colors: ["#94C4FF", "#FFC38D", "#4169e1", "#C5AFF6", "#8DD4B4", "#EB8A93", "#94C4FF", "#FFC38D"],
   legend: {
     show: !1
   }
