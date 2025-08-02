@@ -365,7 +365,7 @@
       plum: "#DDA0DD",
       powderblue: "#B0E0E6",
       rosybrown: "#BC8F8F",
-      royalblue: "#4169E1",
+      royalblue: "#1C1B20",
       saddlebrown: "#8B4513",
       salmon: "#FA8072",
       sandybrown: "#F4A460",

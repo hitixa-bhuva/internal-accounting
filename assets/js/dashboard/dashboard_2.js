@@ -55,7 +55,7 @@ options = {
       opacity: 0.8
     }
   },
-  colors: ['#4169e1', ParisAdminConfig.secondary, ParisAdminConfig.warning, '#C5AFF6', '#EB8A93', '#8DD4B4'],
+  colors: ['#1C1B20', ParisAdminConfig.secondary, ParisAdminConfig.warning, '#C5AFF6', '#EB8A93', '#8DD4B4'],
   fill: {
     // type: 'pattern',
     type: ['pattern', 'solid', 'pattern', 'solid', 'solid'],
@@ -269,7 +269,7 @@ var options = {
   xaxis: {
     categories: ["Mobile", "Men Fishion", "Women Fishion", "Beauty", "Health", "Sports", "Music", "Kids"]
   },
-  colors: [ParisAdminConfig.secondary, "#FFC38D", "#4169e1", "#C5AFF6", "#8DD4B4", "#EB8A93", "#94C4FF", "#FFC38D"],
+  colors: [ParisAdminConfig.secondary, "#FFC38D", "#1C1B20", "#C5AFF6", "#8DD4B4", "#EB8A93", "#94C4FF", "#FFC38D"],
   legend: {
     show: !1
   }

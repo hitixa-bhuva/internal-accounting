@@ -1,82 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coordinator Details</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Client Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
 
+    .header {
+      background-color: #ffffff;
+      border-bottom: 2px solid #dee2e6;
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+
+    .section-card {
+      background: white;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .section-header {
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 15px 20px;
+      border-bottom: 1px solid #dee2e6;
+      font-weight: 600;
+    }
+
+    .payment-btn {
+      background-color: #007bff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      font-weight: 500;
+    }
+
+    .payment-btn:hover {
+      background-color: #0056b3;
+      color: white;
+    }
+
+    .info-row {
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .info-row:last-child {
+      border-bottom: none;
+    }
+
+    .table th {
+      background-color: #f8f9fa;
+      font-weight: 600;
+      color: #495057;
+    }
+
+    .amount {
+      font-weight: 600;
+      color: #28a745;
+    }
+
+  </style>
 </head>
-<body class="coordinator-management-view-body">
-    <div class="coordinator-management-view-container">
-        <div class="coordinator-management-view-header">
-            <h1>Coordinator Details</h1>
-            <p>Complete profile information and account details</p>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h1 class="mb-0" style="color: #333;">Client Dashboard</h1>
+          <p class="mb-0" style="color: #666;">Manage client projects, payments, and billing</p>
         </div>
-
-        <div class="coordinator-management-view-content">
-            <div class="coordinator-management-view-details-grid">
-                <!-- Personal Details Card -->
-                <div class="coordinator-management-view-card">
-                    <h2 class="coordinator-management-view-card-title">Personal Details</h2>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Full Name</span>
-                        <span class="coordinator-management-view-field-value">John Alexander Smith</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Contact Number</span>
-                        <span class="coordinator-management-view-field-value">+1 (555) 123-4567</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Company Email</span>
-                        <span class="coordinator-management-view-field-value">john.smith@company.com</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Personal Email</span>
-                        <span class="coordinator-management-view-field-value">john.smith.personal@email.com</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Joining Date</span>
-                        <span class="coordinator-management-view-field-value">March 15, 2023</span>
-                    </div>
-                </div>
-
-                <!-- Account Details Card -->
-                <div class="coordinator-management-view-card">
-                    <h2 class="coordinator-management-view-card-title">Account Details</h2>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Account Number</span>
-                        <span class="coordinator-management-view-field-value">1234567890123456</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">IFSC Code</span>
-                        <span class="coordinator-management-view-field-value">HDFC0001234</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Account Holder Name</span>
-                        <span class="coordinator-management-view-field-value">John Alexander Smith</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Bank Name</span>
-                        <span class="coordinator-management-view-field-value">HDFC Bank Limited</span>
-                    </div>
-                    <div class="coordinator-management-view-field">
-                        <span class="coordinator-management-view-field-label">Role</span>
-                        <span class="coordinator-management-view-field-value">Senior Project Coordinator</span>
-                    </div>
-                </div>
-
-                <!-- Active Badge Section -->
-                <div class="coordinator-management-view-badge-section">
-                    <div class="coordinator-management-view-badge-content">
-                        <div class="coordinator-management-view-badge-status">ACTIVE</div>
-                        <div class="coordinator-management-view-holder-contact">
-                            <strong>Holder Contact:</strong>
-                            +1 (555) 987-6543
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-4 text-end">
+          <button class="btn payment-btn">
+            Take Payment
+          </button>
         </div>
+      </div>
     </div>
+  </div>
+
+  <div class="container">
+    <!-- Client Details -->
+    <div class="section-card">
+      <div class="section-header">
+        👤 Client Details
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="info-row">
+              <strong>Name:</strong> John Doe
+            </div>
+            <div class="info-row">
+              <strong>Email:</strong> john.doe@example.com
+            </div>
+            <div class="info-row">
+              <strong>Phone:</strong> +1 (555) 123-4567
+            </div>
+            <div class="info-row">
+              <strong>Company:</strong> Tech Solutions Inc.
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="info-row">
+              <strong>Address:</strong> 123 Business Street, Suite 100
+            </div>
+            <div class="info-row">
+              <strong>City:</strong> New York, NY 10001
+            </div>
+            <div class="info-row">
+              <strong>Client Since:</strong> January 2023
+            </div>
+            <div class="info-row">
+              <strong>Status:</strong> <span class="badge bg-success status-badge">Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Details -->
+    <div class="section-card">
+      <div class="section-header">
+        🚀 Project Details
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info-row">
+              <strong>Project Name:</strong> E-commerce Website Development
+            </div>
+            <div class="info-row">
+              <strong>Project Type:</strong> Web Development
+            </div>
+            <div class="info-row">
+              <strong>Start Date:</strong> March 1, 2024
+            </div>
+            <div class="info-row">
+              <strong>Deadline:</strong> June 30, 2024
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-row">
+              <strong>Status:</strong> <span class="badge bg-primary status-badge">In Progress</span>
+            </div>
+            <div class="info-row">
+              <strong>Total Amount:</strong> <span class="amount">$15,000</span>
+            </div>
+            <div class="info-row">
+              <strong>Paid Amount:</strong> <span class="amount">$9,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment History -->
+    <div class="section-card">
+      <div class="section-header">
+        💰 Payment History
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Invoice #</th>
+                <th>Amount</th>
+                <th>Method</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>May 15, 2024</td>
+                <td>INV-2024-001</td>
+                <td class="amount">$5,000</td>
+                <td>Bank Transfer</td>
+                <td><span class="badge bg-success paid">Paid</span></td>
+              </tr>
+              <tr>
+                <td>April 1, 2024</td>
+                <td>INV-2024-002</td>
+                <td class="amount">$4,000</td>
+                <td>Credit Card</td>
+                <td><span class="badge bg-success">Paid</span></td>
+              </tr>
+              <tr>
+                <td>March 15, 2024</td>
+                <td>INV-2024-003</td>
+                <td class="amount">$6,000</td>
+                <td>Pending</td>
+                <td><span class="badge bg-warning">Pending</span></td>  
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bill/Invoice/Challan Details -->
+    <div class="section-card">
+      <div class="section-header">
+        📋 Bill/Invoice/Challan Details
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card border-primary h-100">
+              <div class="card-header bg-primary text-white text-center">
+                <h6 class="mb-0">📄 Current Invoice</h6>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="text-primary">INV-2024-004</h4>
+                <p class="mb-2"><strong>Amount:</strong> <span class="amount">$6,000</span></p>
+                <p class="mb-2"><strong>Due Date:</strong> June 30, 2024</p>
+                <span class="badge bg-warning">Pending</span>
+                <hr>
+                <button class="btn btn-outline-primary btn-sm">📧 Send Invoice</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card border-success h-100">
+              <div class="card-header bg-success text-white text-center">
+                <h6 class="mb-0">🧾 Challan</h6>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="text-success">CH-2024-001</h4>
+                <p class="mb-2"><strong>GST:</strong> 18%</p>
+                <p class="mb-2"><strong>Tax Amount:</strong> $1,080</p>
+                <span class="badge bg-success">Generated</span>
+                <hr>
+                <button class="btn btn-outline-success btn-sm">📄 Download</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-info h-100">
+              <div class="card-header bg-info text-white text-center">
+                <h6 class="mb-0">💼 International</h6>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="text-info">INT-2024-001</h4>
+                <p class="mb-2"><strong>Currency:</strong> USD</p>
+                <p class="mb-2"><strong>Exchange Rate:</strong> ₹83.25</p>
+                <span class="badge bg-info">Active</span>
+                <hr>
+                <button class="btn btn-info btn-sm">🌍 View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
