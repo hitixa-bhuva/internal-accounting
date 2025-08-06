@@ -8692,7 +8692,10 @@ button.button-primary:hover {
   font-weight: 500;
   color: #1C1B20;
 }
-
+.img-fluid{
+    max-width: 90% !important;
+    height: auto;
+}
 .card-absolute {
   margin-top: 20px;
 }

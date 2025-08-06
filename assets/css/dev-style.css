@@ -920,4 +920,12 @@
         padding: 16px;
         gap: 16px;
       }
+          .project-list-container {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+
     }
