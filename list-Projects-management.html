@@ -289,18 +289,20 @@
                           <option value="Inactive">Inactive</option>
                         </select>
                       </div>
-                    <div class="col-md-6 mt-2"> 
+                      <div class="col-md-6 mt-3">
+                          <label for="daterange">Select Date Range:</label><br>
+                            <input type="text" name="daterange" id="daterange" />
+                    </div>
+                    <div class="col-md-6 mt-3"> 
                          <label class="form-label" for="coordinator">Project Type</label>
-                        <div class="card-body"> 
+                        <div class="card-body p-0"> 
                           <form>
                             <input class="some_class_name" name="input-custom-dropdown" placeholder="write some tags" value="Web Site, Application">
                           </form>
                         </div>
+                        
                     </div>
-                    <div class="col-md-6">
-                          <label for="daterange">Select Date Range:</label><br><br>
-                            <input type="text" name="daterange" id="daterange" />
-                    </div>
+                    
                         <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
                           <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
                           <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>
@@ -575,25 +577,7 @@
       });
     });
   </script>
-    <script>
-  $(function () {
-    $('#dateRange').daterangepicker({
-      autoUpdateInput: false,
-      locale: {
-        cancelLabel: 'Clear',
-        format: 'DD/MM/YYYY'
-      }
-    });
 
-    $('#dateRange').on('apply.daterangepicker', function (ev, picker) {
-      $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
-    });
-
-    $('#dateRange').on('cancel.daterangepicker', function (ev, picker) {
-      $(this).val('');
-    });
-  });
-</script>
 
          <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -672,10 +656,28 @@
     <script src="./assets/js/select2/select3-custom.js"></script>
     <script src="./assets/js/select2.full.min.js"></script>
     <script src="./assets/js/select2-init.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Moment.js (required by daterangepicker) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+     <!-- jQuery from your admin panel -->
+<script src="./assets/js/jquery.min.js"></script>
+
+<!-- Moment.js -->
 <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <!-- Daterangepicker JS -->
+
+<!-- Daterangepicker -->
 <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <!-- Moment.js (required by daterangepicker) -->
+<!-- <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script> -->
+  <!-- Daterangepicker JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script> -->
+ <script>
+$(document).ready(function(){
+    $('#daterange').daterangepicker({
+        opens: 'left'
+    }, function(start, end, label) {
+        console.log("Selected: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
+});
+</script>
+
   </body>
 </html>

@@ -63783,3 +63783,9 @@ body[class*=dark-] .for-light {
 ==========================**/
 /*# sourceMappingURL=style.css.map */
 /*======================================== bootstrap colo style ========================================= */
+.daterangepicker{
+        direction: inherit;
+        text-align: right;
+        right: 54% !important;
+            left: 12% !important;
+    }
