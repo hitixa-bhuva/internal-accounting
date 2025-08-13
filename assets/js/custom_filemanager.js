@@ -3,21 +3,17 @@
 let fileSystemTree = [
   {
     isDirectory: true,
-    name: "Test folder",
+    name: "Kodel",
     child: [
       {
         isDirectory: false,
-        name: "Text.txt",
+        name: "Index.txt",
       },
     ],
   },
   {
-    isDirectory: false,
-    name: "index.html",
-  },
-  {
     isDirectory: true,
-    name: "Folder A",
+    name: "Ahmedabad Media",
     child: [
       {
         isDirectory: false,
@@ -40,77 +36,8 @@ let fileSystemTree = [
     ],
   },
   {
-    isDirectory: false,
-    name: "index.php",
-  },
-  {
-    isDirectory: false,
-    name: "Textfile.txt",
-  },
-  {
-    isDirectory: false,
-    name: "Changelog.exe",
-  },
-  {
     isDirectory: true,
-    name: "Folder B",
-    child: [
-      {
-        isDirectory: false,
-        name: "Dropdown.php",
-      },
-    ],
-  },
-  {
-    isDirectory: false,
-    name: "Mofi.html",
-  },
-
-  {
-    isDirectory: false,
-    name: "Logo.psd",
-  },
-  {
-    isDirectory: true,
-    name: "Images",
-    child: [
-      {
-        isDirectory: false,
-        name: "1.png",
-      },
-      {
-        isDirectory: false,
-        name: "2.png",
-      },
-      {
-        isDirectory: false,
-        name: "3.png",
-      },
-      {
-        isDirectory: false,
-        name: "4.png",
-      },
-      {
-        isDirectory: false,
-        name: "5.png",
-      },
-      {
-        isDirectory: false,
-        name: "6.png",
-      },
-      {
-        isDirectory: false,
-        name: "7.png",
-      },
-      {
-        isDirectory: false,
-        name: "8.png",
-      },
-    ],
-  },
-  {
-    isDirectory: true,
-    name: "Applications",
+    name: "Kerol Turf",
     child: [
       {
         isDirectory: false,
@@ -126,18 +53,9 @@ let fileSystemTree = [
       },
     ],
   },
-
-  {
-    isDirectory: false,
-    name: "Project.zip",
-  },
-  {
-    isDirectory: false,
-    name: "essay.txt",
-  },
   {
     isDirectory: true,
-    name: "Start-up",
+    name: "Lorence",
     child: [
       {
         isDirectory: false,
@@ -149,113 +67,7 @@ let fileSystemTree = [
       },
     ],
   },
-  {
-    isDirectory: false,
-    name: "file.unknown",
-  },
-  {
-    isDirectory: false,
-    name: "timer.svg",
-  },
-  {
-    isDirectory: true,
-    name: "Resumes",
-    child: [
-      {
-        isDirectory: false,
-        name: "Jacob_Jones.exe",
-      },
-      {
-        isDirectory: false,
-        name: "Jams_Bone.txt",
-      },
-      {
-        isDirectory: false,
-        name: "Mili_Pais.txt",
-      },
-    ],
-  },
-  {
-    isDirectory: true,
-    name: "Demo_files",
-    child: [
-      {
-        isDirectory: false,
-        name: "C_pro.net",
-      },
-    ],
-  },
 
-  {
-    isDirectory: true,
-    name: ".net_pra",
-    child: [
-      {
-        isDirectory: false,
-        name: "Practical_3.net",
-      },
-      {
-        isDirectory: false,
-        name: "Practical_6.net",
-      },
-    ],
-  },
-  {
-    isDirectory: false,
-    name: "audiobook.m4b",
-  },
-  {
-    isDirectory: true,
-    name: "Portfolio",
-    child: [
-      {
-        isDirectory: false,
-        name: "ux_design.rar",
-      },
-      {
-        isDirectory: false,
-        name: "practical.rar",
-      },
-    ],
-  },
-  {
-    isDirectory: false,
-    name: "song.m4v",
-  },
-  {
-    isDirectory: false,
-    name: "product_list.xml",
-  },
-  {
-    isDirectory: false,
-    name: "birds_sound.aiff",
-  },
-  {
-    isDirectory: true,
-    name: "Themes",
-    child: [
-      {
-        isDirectory: false,
-        name: "mofi.php",
-      },
-      {
-        isDirectory: false,
-        name: "riho.php",
-      },
-      {
-        isDirectory: false,
-        name: "koho.php",
-      },
-    ],
-  },
-  {
-    isDirectory: false,
-    name: "presentation.wmv",
-  },
-  {
-    isDirectory: false,
-    name: "conference.mp4",
-  },
 ];
 class HistoryStack {
   #items;

@@ -232,6 +232,12 @@
                       <span class="lan-6">Incoming</span></a>
                   </li>
                   <li class="sidebar-list">
+                  <i class="fa-solid fa-thumbtack" style="color: rgb(255, 255, 255);"></i>
+                  <a class="sidebar-link sidebar-title link-nav" href="list-internal-transfer.html">
+                      <i data-feather="repeat"></i>
+                      <span class="lan-6">Internal Transfer </span></a>
+                  </li>
+                  <li class="sidebar-list">
                     <i class="fa-solid fa-thumbtack" style="color: rgb(255, 255, 255);"></i>
                     <a class="sidebar-link sidebar-title link-nav" href="list-Loan-Outgoing.html">
                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 640 640"><path d="M31 169C21.6 159.6 21.6 144.4 31 135.1L103 63C112.4 53.6 127.6 53.6 136.9 63C146.2 72.4 146.3 87.6 136.9 96.9L105.9 127.9L173.6 127.9L173.6 127.9L511.9 127.9C547.2 127.9 575.9 156.6 575.9 191.9L575.9 370.1L570.8 365C542.7 336.9 497.1 336.9 469 365C441.8 392.2 440.9 435.6 466.2 463.9L533.9 463.9L502.9 432.9C493.5 423.5 493.5 408.3 502.9 399C512.3 389.7 527.5 389.6 536.8 399L608.8 471C618.2 480.4 618.2 495.6 608.8 504.9L536.8 576.9C527.4 586.3 512.2 586.3 502.9 576.9C493.6 567.5 493.5 552.3 502.9 543L533.9 512L127.8 512C92.5 512 63.8 483.3 63.8 448L63.8 269.8L68.9 274.9C97 303 142.6 303 170.7 274.9C197.9 247.7 198.8 204.3 173.5 176L105.8 176L136.8 207C146.2 216.4 146.2 231.6 136.8 240.9C127.4 250.2 112.2 250.3 102.9 240.9L31 169zM416 320C416 267 373 224 320 224C267 224 224 267 224 320C224 373 267 416 320 416C373 416 416 373 416 320zM504 255.5C508.4 256 512 252.4 512 248L512 200C512 195.6 508.4 192 504 192L456 192C451.6 192 447.9 195.6 448.5 200C452.1 229 475.1 251.9 504 255.5zM136 384.5C131.6 384 128 387.6 128 392L128 440C128 444.4 131.6 448 136 448L184 448C188.4 448 192.1 444.4 191.5 440C187.9 411 164.9 388.1 136 384.5z"/></svg>
@@ -275,33 +281,39 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="card shadow ">
-                  <div class="card m-2 mb-0">
-                  <div class="card-body bg-offwhite">
-                      <div class="row mb-2">
-                        <div class="col-6">
-                          <strong>Company Name:</strong> Ahmedabad Media
+                  <div class="card m-4 mb-0">
+                      <div class="card-body bg-offwhite">
+                        <div class="row mb-2">
+                          <div class="col-6">
+                            <label><strong>Company Name:</strong></label>
+                            <input type="text" class="form-control" value="Ahmedabad Media" disabled>
+                          </div>
+                          <div class="col-6">
+                            <label><strong>Person Name:</strong></label>
+                            <input type="text" class="form-control" value="Jaimin Bhai" disabled>
+                          </div>
                         </div>
-                        <div class="col-6">
-                          <strong>Person Name:</strong> Jaimin Bhai
+                      
+                        <div class="row mb-2">
+                          <div class="col-6">
+                            <label><strong>Contact Number:</strong></label>
+                            <input type="text" class="form-control" value="+91 9724983687" disabled>
+                          </div>
+                          <div class="col-6">
+                            <label><strong>GST Number:</strong></label>
+                            <input type="text" class="form-control" value="24ABCDE1234F1Z5" disabled>
+                          </div>
                         </div>
-                      </div>
-                    
-                      <div class="row mb-2">
-                        <div class="col-6">
-                          <strong>Contact Number:</strong> +91 9724983687
-                        </div>
-                        <div class="col-6">
-                          <strong>GST Number:</strong> 24ABCDE1234F1Z5
-                        </div>
-                      </div>
-                    
-                      <div class="row mb-2">
-                        <div class="col-12">
-                          <strong>Address:</strong> 402, Sunrise Complex, CG Road, Ahmedabad, Gujarat - 380009
+                      
+                        <div class="row mb-2">
+                          <div class="col-12">
+                            <label><strong>Address:</strong></label>
+                            <input type="text" class="form-control" value="402, Sunrise Complex, CG Road, Ahmedabad, Gujarat - 380009" disabled>
+                          </div>
                         </div>
                       </div>
                     </div>
-                </div>
+
                   <div class="card-body">
                     <form class="row g-3 needs-validation custom-input" novalidate="">
                       <div class="col-md-12 position-relative">
@@ -413,7 +425,7 @@
                       </div>
                       <div class="col-md-6 position-relative">
                         <label class="form-label" for="validationTooltipContactNumber">Cordinate Contact Number</label>
-                        <input class="form-control" id="validationTooltipContactNumber" type="tel" value="+91 95865 96385" required="">
+                        <input class="form-control" id="validationTooltipContactNumber" type="tel" value="+91 95865 96385" required="" disabled>
                         <div class="valid-tooltip">Looks good!</div>
                       </div>    
                        <div class="col-md-12 position-relative mt-0">
@@ -554,14 +566,12 @@
                           <div class="valid-feedback">Looks's Good!</div>
                         </div> 
                       </div>  
-                    </form>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-sm-12">
+                       <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-sm-12">
                 <h5 class="mb-2 p-2">Attachment Files</h5>
                 <div class="card shadow bg-offwhite">
-                  <div class="card-body">
+                  <div class="card-body d-flex gap-2 align-items-end">
                     <form class="row g-3 needs-validation custom-input" novalidate="">
                       <div class="col-md-6"> 
                         <label class="form-label" for="formFile">Choose File</label>
@@ -579,7 +589,7 @@
                   </div>
                   
                     <div class="col-sm-12 px-4 ">
-                <div class="card shadow">
+                <div class="card">
                   <div class="table-responsive custom-scrollbar">
                     <table class="table border-bottom-table">
                       <thead>
@@ -587,7 +597,7 @@
                           <th scope="col">No</th>
                           <th scope="col">Name</th>
                           <th scope="col">File</th>
-                          <th scope="col">Action</th>
+                          <th scope="col" class="text-nowrap">Action</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -623,12 +633,18 @@
                 </div>
                
                   </div>
-                  <div class="card-footer text-center">
+                </div>
+                
+                       </div> 
+                        </div>
+                       </div>
+              <div class=" mt-2 text-center">
                       <button class="btn btn-primary me-3" type="submit">Save</button>
                       <input class="btn btn-light" type="reset" value="Cancel">
                     </div>
+                    </form>
+                  </div>
                 </div>
-                
               </div> 
             </div>
           </div>

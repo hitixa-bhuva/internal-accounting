@@ -52,7 +52,7 @@
     color: #483D8B;
 }
 .mt-100{
-  margin-top: 110px;
+  margin-top: 40px;
 }
 .fs-15{
   font-size: 15px !important;
@@ -99,10 +99,10 @@
 
         .client-view-card {
             background-color: #ffffff;
-            border: 1px solid #e4e7ec;
+            /* border: 1px solid #e4e7ec; */
             border-radius: 12px;
             padding: 15px;
-            box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1);
+            /* box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1); */
         }
 
         .client-view-card-title {
@@ -152,10 +152,10 @@
         .client-view-remarks {
             grid-column: 1 / -1          ;
             background-color: #ffffff;
-            border: 1px solid #e4e7ec;
+            /* border: 1px solid #e4e7ec; */
             border-radius: 12px;
-            padding: 12px;
-            box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1);
+            /* padding: 12px; */
+            /* box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1); */
             margin-top: 0;
         }
 
@@ -383,7 +383,7 @@
 
         .coordinator-management-view-badge-section {
             grid-column: 1 / -1;
-            border: 1px solid #28a745;
+            /* border: 1px solid #28a745; */
             color: white;
             background-color: transparent;
             border-radius: 15px;
@@ -409,7 +409,6 @@
 
         .coordinator-management-view-holder-contact {
             font-size: 1.1rem;
-            margin-top: 10px;
             color: #2c3e50;
             display: flex;
             justify-content: center;
@@ -519,20 +518,20 @@
             min-height: 120px;
         }
         .card-pink{
-             border: 2px dashed #FF1493;
-             background-color: #fff0f8;
+             border: 2px dashed #ff149380;
+             background-color: #fff0f872;
         }
         .card-green{
-            background-color: #e3f9e3;
-            border: 2px dashed #008000;
+            background-color: #e3f9e35d;
+            border: 2px dashed #0080005e;
         }
         .card-teal {
-          background-color: #e1f9f9;
-          border: 2px dashed #48D1CC;
+          background-color: #e1f9f964;
+          border: 2px dashed #48d1cc75;
         }
         .card-orange {
-          background-color: #fff3e1;
-          border: 2px dashed #FFA500;
+          background-color: #fff3e16b;
+          border: 2px dashed #ffa5005c;
         }
         @keyframes outgoing-view-shimmer {
             0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
@@ -590,16 +589,16 @@
             }
         }
         .card-MediumVioletRed{
-            border: 2px dashed #C71585;
-            background-color: #ffeaf7;
+            border: 2px dashed #ff149380;
+            background-color: #fff0f872;
         }
          .card-Purple{
-            border: 2px dashed #7B68EE;
-            background-color: #e7e3ff;
+            border: 2px dashed #7c68ee5a;
+            background-color: #e7e3ff5b;
         }
         .card-LimeGreen{
-            border: 2px dashed #32CD32;
-            background-color: #e3ffe3;
+            border: 2px dashed #0080005e;
+            background-color: #e3f9e35d;
         }
         .incomaing{
             grid-template-columns: repeat(3, 1fr) !important;
