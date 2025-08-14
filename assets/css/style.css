@@ -8696,7 +8696,7 @@ button.button-primary:hover {
   font-size: 14px !important;
 }
 .img-fluid{
-    max-width: 90% !important;
+    max-width: 80% !important;
     height: auto;
 }
 .card-absolute {
@@ -43222,7 +43222,7 @@ table.table-bordered thead tr th p {
 .left-header .left-menu-header ul.header-left {
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 @media (max-width: 991px) {
   .left-header .left-menu-header ul.header-left {
