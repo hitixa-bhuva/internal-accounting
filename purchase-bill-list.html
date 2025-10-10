@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,28 +48,27 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
 </head>
-
-<body>
-  <!-- tap on top starts-->
-  <div class="tap-top"><i data-feather="chevrons-up"></i></div>
-  <!-- tap on tap ends-->
-  <!-- loader starts-->
-  <div class="loader-wrapper">
-    <div class="theme-loader">
-      <svg width="100" height="100" viewbox="0 0 100 100">
-        <circle class="circle outer" cx="50" cy="50" r="45"></circle>
-        <circle class="circle inner" cx="50" cy="50" r="25"></circle>
-        <circle class="dots" cx="50" cy="5" r="3"></circle>
-        <circle class="dots" cx="95" cy="50" r="3"></circle>
-        <circle class="dots" cx="50" cy="95" r="3"></circle>
-        <circle class="dots" cx="5" cy="50" r="3"></circle>
-      </svg>
+  <body>
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends--> 
+    <!-- loader starts-->
+    <div class="loader-wrapper">
+      <div class="theme-loader"> 
+        <svg width="100" height="100" viewbox="0 0 100 100">
+          <circle class="circle outer" cx="50" cy="50" r="45"></circle>
+          <circle class="circle inner" cx="50" cy="50" r="25"></circle>
+          <circle class="dots" cx="50" cy="5" r="3"></circle>
+          <circle class="dots" cx="95" cy="50" r="3"></circle>
+          <circle class="dots" cx="50" cy="95" r="3"></circle>
+          <circle class="dots" cx="5" cy="50" r="3"></circle>
+        </svg>
+      </div>
     </div>
-  </div>
-  <!-- loader ends-->
-  <!-- page-wrapper Start-->
-  <div class="page-wrapper compact-wrapper" id="pageWrapper">
-    <!-- Page Header Start-->
+    <!-- loader ends-->
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+      <!-- Page Header Start-->
     <div class="page-header">
       <div class="header-wrapper row m-0">
         <form class="form-inline search-full col" action="#" method="get">
@@ -138,10 +136,10 @@
           type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
       </div>
     </div>
-    <!-- Page Header Ends-->
-    <!-- Page Body Start-->
-    <div class="page-body-wrapper">
-      <!-- Page Sidebar Start-->
+      <!-- Page Header Ends                              -->
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper">
+        <!-- Page Sidebar Start-->
       <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
         <div>
           <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light main-logo-img" width="100"
@@ -256,13 +254,14 @@
             </nav>
         </div>
       </div>
-      <!-- Page Sidebar Ends-->
-      <div class="page-body">
+        <!-- Page Sidebar Ends-->
+
+              <div class="page-body">
         <!-- Container-fluid starts-->
         <div class="container-fluid basic_table">
           <div class="row ">  
             <div class="col-md-6 mt-100">
-              <h3>Client List</h3>
+              <h3>Purcahse Bill List</h3>
             </div>
             <div class="col-md-6 mt-100">
               <div class="feature-products">
@@ -278,8 +277,8 @@
                       </svg>
                     </div>
                   </div>
-                  <a class="btn btn-primary f-w-500" href="add-Client-management.html">
-                    <i class="fa fa-plus pe-2"></i>Add Client
+                  <a class="btn btn-primary f-w-500" href="purchase-bill.html">
+                    <i class="fa fa-plus pe-2"></i>Add Purchase Bill
                   </a>
                 </div>
               </div>
@@ -287,88 +286,34 @@
             <div class="col-sm-12">
               <div class="card shadow">
                 <div class="table-responsive custom-scrollbar">
-                  <table class="table border-bottom-table">
-                    <thead>
-                      <tr class="border-bottom-primary">
-                        <th scope="col">No</th>
-                        <th scope="col">Company Name</th>
-                        <th scope="col">Person Name</th>
-                        <th scope="col">Contact Number</th>
-                        <th scope="col">Gst Number</th>
-                        <th scope="col">Email</th>
-                        <th scope="col" class="text-nowrap">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <td>1</td>
-                          <td>Unique IT Solution</td>
-                          <td>Ravi Mehta</td>
-                          <td>9876543210</td>
-                          <td>24ABCDE1234F1Z5</td>
-                          <td>ravi@uniqueit.com</td>
-                          <td>
-                              <a href="#" 
-                                 class=" btn btn-sm view-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-target="#viewModal" 
-                                 data-bs-placement="top" 
-                                 title="View">
-                                <i class="fas fa-eye"></i>
-                              </a>
-                            
-                              <a href="add-new-project.html" 
-                                 class="btn btn-sm new-project-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="New Project">
-                                <i class="fas fa-plus-circle"></i>
-                              </a>
-                            
-                              <a href="add-Client-management.html" 
-                                 class="btn btn-sm edit-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="Edit">
-                                <i class="fas fa-edit"></i>
-                              </a>
-                            
-                              <a href="#" 
-                                 class="btn btn-sm delete-action deleteItem me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="Delete">
-                                <i class="fas fa-trash"></i>
-                              </a>
-                            </td>
-
+                    <table class="table border-bottom-table">
+                      <thead>
+                        <tr class="border-bottom-primary">
+                          <th scope="col">No</th>
+                          <th scope="col">Vendor Name</th>
+                          <th scope="col">Bill Number</th>
+                          <th scope="col">Contact Number</th>
+                          <th scope="col">TotalItems</th>
+                          <th scope="col">Amount</th>
+                          <th scope="col">Document</th>
+                          <th scope="col">Action</th>
                         </tr>
-                    
-                        <tr>
-                          <td>2</td>
-                          <td>EEM Branding</td>
-                          <td>Neha Shah</td>
-                          <td>9988776655</td>
-                          <td>24PQWER5678G9Z6</td>
-                          <td>neha@eembranding.com</td>
-                          <td>
-                              <a href="#" 
-                                 class=" btn btn-sm view-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-target="#viewModal" 
-                                 data-bs-placement="top" 
-                                 title="View">
-                                <i class="fas fa-eye"></i>
-                              </a>
-                            
-                              <a href="add-new-project.html" 
-                                 class="btn btn-sm new-project-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="New Project">
-                                <i class="fas fa-plus-circle"></i>
-                              </a>
-                            
-                              <a href="add-Client-management.html" 
+                      </thead>
+                      <tbody>
+                         <tr>
+                           <td>1</td>
+                           <td>Vendor A</td>
+                           <td>INV-00123</td>
+                           <td>+1 234 567 890</td>
+                           <td>15</td>
+                           <td>$1,250.00</td>
+                         <td>
+                          <a href="dummy.pdf" class="btn btn-sm btn-soft-indigo " download title="Download PDF">
+                            <i class="fas fa-file-pdf "></i>
+                          </a>
+                        </td>
+                           <td>
+                                <a href="purchase-bill.html" 
                                  class="btn btn-sm edit-action me-1" 
                                  data-bs-toggle="tooltip" 
                                  data-bs-placement="top" 
@@ -383,35 +328,22 @@
                                  title="Delete">
                                 <i class="fas fa-trash"></i>
                               </a>
-                            </td>
-                        </tr>
-                    
-                        <tr>
-                          <td>3</td>
-                          <td>Like Technologies</td>
-                          <td>Amit Patel</td>
-                          <td>9123456789</td>
-                          <td>24LMNOP9876H2Z1</td>
-                          <td>amit@liketech.in</td>
-                          <td>
-                              <a href="#" 
-                                 class=" btn btn-sm view-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-target="#viewModal" 
-                                 data-bs-placement="top" 
-                                 title="View">
-                                <i class="fas fa-eye"></i>
-                              </a>
-                            
-                              <a href="add-new-project.html" 
-                                 class="btn btn-sm new-project-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="New Project">
-                                <i class="fas fa-plus-circle"></i>
-                              </a>
-                            
-                              <a href="add-Client-management.html" 
+                          </td>
+                         </tr>
+                         <tr>
+                           <td>2</td>
+                           <td>Vendor B</td>
+                           <td>INV-00124</td>
+                           <td>+91 98765 43210</td>
+                           <td>22</td>
+                           <td>₹18,000.00</td>
+                           <td>
+                          <a href="dummy.pdf" class="btn btn-sm btn-soft-indigo " download title="Download PDF">
+                            <i class="fas fa-file-pdf "></i>
+                          </a>
+                        </td>
+                           <td>
+                            <a href="purchase-bill.html" 
                                  class="btn btn-sm edit-action me-1" 
                                  data-bs-toggle="tooltip" 
                                  data-bs-placement="top" 
@@ -426,95 +358,10 @@
                                  title="Delete">
                                 <i class="fas fa-trash"></i>
                               </a>
-                            </td>
-                        </tr>
-                        <tr>
-                      <td>4</td>
-                      <td>CodeNest Software</td>
-                      <td>Deepika Joshi</td>
-                      <td>9012345678</td>
-                      <td>24ZXCVB4321K7Z2</td>
-                      <td>deepika@codenest.io</td>
-                      <td>
-                              <a href="#" 
-                                 class=" btn btn-sm view-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-target="#viewModal" 
-                                 data-bs-placement="top" 
-                                 title="View">
-                                <i class="fas fa-eye"></i>
-                              </a>
-                            
-                              <a href="add-new-project.html" 
-                                 class="btn btn-sm new-project-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="New Project">
-                                <i class="fas fa-plus-circle"></i>
-                              </a>
-                            
-                              <a href="add-Client-management.html" 
-                                 class="btn btn-sm edit-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="Edit">
-                                <i class="fas fa-edit"></i>
-                              </a>
-                            
-                              <a href="#" 
-                                 class="btn btn-sm delete-action deleteItem me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="Delete">
-                                <i class="fas fa-trash"></i>
-                              </a>
-                            </td>
-                    </tr>
-                    
-                    <tr>
-                      <td>5</td>
-                      <td>PixelEdge Solutions</td>
-                      <td>Suresh Rana</td>
-                      <td>8877665544</td>
-                      <td>24QWERT6543L8Z3</td>
-                      <td>suresh@pixeledge.com</td>
-                      <td>
-                              <a href="#" 
-                                 class=" btn btn-sm view-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-target="#viewModal" 
-                                 data-bs-placement="top" 
-                                 title="View">
-                                <i class="fas fa-eye"></i>
-                              </a>
-                            
-                              <a href="add-new-project.html" 
-                                 class="btn btn-sm new-project-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="New Project">
-                                <i class="fas fa-plus-circle"></i>
-                              </a>
-                            
-                              <a href="add-Client-management.html" 
-                                 class="btn btn-sm edit-action me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="Edit">
-                                <i class="fas fa-edit"></i>
-                              </a>
-                            
-                              <a href="#" 
-                                 class="btn btn-sm delete-action deleteItem me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="Delete">
-                                <i class="fas fa-trash"></i>
-                              </a>
-                            </td>
-                    </tr>
-                    </tbody>
-                  </table>
+                          </td>
+                         </tr>
+                      </tbody>
+                    </table>
                 </div>
                 <div class="row p-2">
                     <div class="col-md-6">
@@ -588,227 +435,108 @@
         </div>
         <!-- Container-fluid Ends-->
       </div>
-      <!-- footer start-->
-      <footer class="footer">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12 footer-copyright text-center">
-              <p class="mb-0 f-w-600">Copyright <span class="year-update">
-                </span> © By <a href="https://theuniqueitsolution.com/" class="text-dark text-decoration-none"
-                  target="_blank">The
-                  Unique IT Solution</a> </p>
+        <!-- footer start-->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 footer-copyright text-center">
+                <p class="mb-0 f-w-600">Copyright <span class="year-update"> </span> © By <a href="https://theuniqueitsolution.com/" class="text-dark text-decoration-none" target="_blank">The Unique IT Solution</a>   </p>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
-    </div>
-  </div>
-
-  <!-- model view -->
-<div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-         <h3 class="modal-title" id="viewModalLabel">Ahmedabad Media <span class="text-gray f-14"> Project Details</span></h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-       <div class="page-body">
-                <!-- Container-fluid starts-->
-                <div class="container-fluid basic_table">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="card shadow">
-                                <div class="client-view-container p-3">
-                                  <h4>Project Details</h4>
-                                    <div class="client-view-badges">
-                                        <span class="client-view-badge inactive">
-                                            <span class="client-view-status-indicator inactive"></span>
-                                            Website Project
-                                            <div
-                                                class="d-flex justify-content-center badge bg-danger rounded-pill mt-2">
-                                                InActive</div>
-                                        </span>
-                                        <span class="client-view-badge active">
-                                            <span class="client-view-status-indicator active"></span>
-                                            Application Project
-                                            <div
-                                                class="d-flex justify-content-center badge bg-success rounded-pill mt-2">
-                                                Active</div>
-                                        </span>
-                                    </div>
-                                  
-                                    <div class="client-view-main">
-                                        <div class="client-view-card">
-                                          <h4>Client Details</h4>
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">Company Name:- </label>
-                                                <span class="client-view-value">Ahmedabad Media</span>
-                                            </div>
-
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">Contact Person:- </label>
-                                                <span class="client-view-value">Jaimin Bhai</span>
-                                            </div>
-
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">Email Address:- </label>
-                                                <span class="client-view-value client-view-email">
-                                                    <a
-                                                        href="mailto:vaimin@ahmedabadmedia.com">vaimin@ahmedabadmedia.com</a>
-                                                </span>
-                                            </div>
-
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">Contact Number:- </label>
-                                                <span class="client-view-value client-view-contact">
-                                                    <a href="tel:+919724983687">+91 9724983687</a>
-                                                </span>
-                                            </div>
-
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">Website:- </label>
-                                                <span class="client-view-value empty"> Not provided</span>
-                                            </div>
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">Country:- </label>
-                                                <span class="client-view-value">India</span>
-                                            </div>
-
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">State:- </label>
-                                                <span class="client-view-value">Gujarat</span>
-                                            </div>
-
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">City:- </label>
-                                                <span class="client-view-value">Ahmedabad</span>
-                                            </div>
-
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">Pincode:- </label>
-                                                <span class="client-view-value empty"> Not specified</span>
-                                            </div>
-
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">Reference:- </label>
-                                                <span class="client-view-value empty"> Not specified</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="client-view-card">
-                                            <h4 class="mb-4">GST Details</h4>
-
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">GST Number:- </label>
-                                                <span class="client-view-value empty"> Not provided</span>
-                                            </div>
-
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">GST Firm Number:- </label>
-                                                <span class="client-view-value empty"> Not provided</span>
-                                            </div>
-
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">GST Firm Address:- </label>
-                                                <span class="client-view-value empty"> Not provided</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="client-view-remarks w-100">
-                                            <div class="client-view-field">
-                                                <label class="client-view-label">Remarks:- </label>
-                                                <span class="client-view-value empty"> No additional remarks
-                                                    available</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </footer>
       </div>
     </div>
-  </div>
-</div>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const viewLinks = document.querySelectorAll(".view-action");
 
-    viewLinks.forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
 
-        const viewModal = new bootstrap.Modal(document.getElementById('viewModal'));
-        viewModal.show();
+         <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const deleteLinks = document.querySelectorAll('.deleteItem');
+
+    deleteLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+
+        Swal.fire({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#16c7f9',
+          cancelButtonColor: '#fc4438',
+          confirmButtonText: 'Yes, delete it!',
+          cancelButtonText: 'Cancel'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // You can add your delete logic here
+            Swal.fire('Deleted!', 'Your item has been deleted.', 'success');
+          }
+        });
       });
     });
   });
 </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const deleteLinks = document.querySelectorAll('.deleteItem');
-
-      deleteLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-          e.preventDefault(); // Prevent default anchor behavior
-
-          Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#16c7f9',
-            cancelButtonColor: '#fc4438',
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'Cancel'
-          }).then((result) => {
-            if (result.isConfirmed) {
-              // You can add your delete logic here
-              Swal.fire('Deleted!', 'Your item has been deleted.', 'success');
-            }
-          });
-        });
-      });
+     <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
     });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-      tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-        new bootstrap.Tooltip(tooltipTriggerEl);
-      });
+  });
+</script>
+
+     <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterBtn = document.getElementById("filter-button");
+    const filterForm = document.getElementById("filter-form");
+    const clearBtn = document.getElementById("nextbtn");
+
+    // Initially hide the filter form
+    filterForm.style.display = "none";
+
+    // Toggle filter form on button click
+    filterBtn.addEventListener("click", () => {
+      if (filterForm.style.display === "none") {
+        filterForm.style.display = "flex"; // or "block" for vertical layout
+      } else {
+        filterForm.style.display = "none";
+      }
     });
-  </script>
 
-  <!-- latest jquery-->
-  <script src="./assets/js/jquery.min.js"></script>
-  <!-- Bootstrap js-->
-  <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-  <!-- feather icon js-->
-  <script src="./assets/js/icons/feather-icon/feather.min.js"></script>
-  <script src="./assets/js/icons/feather-icon/feather-icon.js"></script>
-  <!-- scrollbar js-->
-  <script src="./assets/js/scrollbar/simplebar.min.js"></script>
-  <script src="./assets/js/scrollbar/custom.js"></script>
-  <!-- Sidebar jquery-->
-  <script src="./assets/js/config.js"></script>
-  <!-- Plugins JS start-->
-  <script src="./assets/js/sidebar-menu.js"></script>
-  <script src="./assets/js/sidebar-pin.js"></script>
-  <script src="./assets/js/slick/slick.min.js"></script>
-  <script src="./assets/js/slick/slick.js"></script>
-  <script src="./assets/js/header-slick.js"></script>
-  <!-- Plugins JS Ends-->
-  <!-- Theme js-->
-  <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/script1.js"></script>
-  <script src="./assets/js/theme-customizer/customizer.js"></script>
-  <!-- SweetAlert2 CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</body>
+    // Clear all inputs and selects
+    clearBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const form = clearBtn.closest("form");
+      form.reset();
+    });
+  });
+</script>
 
-</html>
+    <!-- latest jquery-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- feather icon js-->
+    <script src="./assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="./assets/js/icons/feather-icon/feather-icon.js"></script>
+    <!-- scrollbar js-->
+    <script src="./assets/js/scrollbar/simplebar.min.js"></script>
+    <script src="./assets/js/scrollbar/custom.js"></script>
+    <!-- Sidebar jquery-->
+    <script src="./assets/js/config.js"></script>
+    <!-- Plugins JS start-->
+    <script src="./assets/js/sidebar-menu.js"></script>
+    <script src="./assets/js/sidebar-pin.js"></script>
+    <script src="./assets/js/slick/slick.min.js"></script>
+    <script src="./assets/js/slick/slick.js"></script>
+    <script src="./assets/js/header-slick.js"></script>
+    <!-- Plugins JS Ends-->
+    <!-- Theme js-->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script1.js"></script>
+    <script src="./assets/js/theme-customizer/customizer.js"></script>
+    <script src="./assets/js/datatable/datatables/dataTables.js"></script>
+    <script src="./assets/js/datatable/datatables/dataTables.select.js"></script>
+    <script src="./assets/js/datatable/datatables/datatable.custom.js"></script>
+  </body>
+</html> 

@@ -329,39 +329,12 @@
                         <input class="form-control" id="validationTooltipCompanyname" type="text" required="">
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
-                      <div class="col-md-12 position-relative">
-                          <label class="form-label d-block mb-2">Project Type</label>                       
-
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="projectWebsite" value="Website">
-                            <label class="form-check-label" for="projectWebsite">Website</label>
-                          </div>                        
-
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="projectWebApp" value="Web Application">
-                            <label class="form-check-label" for="projectWebApp">Web Application</label>
-                          </div>                        
-
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="projectApp" value="Application">
-                            <label class="form-check-label" for="projectApp">Application</label>
-                          </div>                        
-
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="projectQR" value="QR Code">
-                            <label class="form-check-label" for="projectQR">QR Code</label>
-                          </div>                        
-
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="projectUIUX" value="UI/UX">
-                            <label class="form-check-label" for="projectUIUX">UI/UX</label>
-                          </div>                        
-
-                          <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="projectOther" value="Other">
-                            <label class="form-check-label" for="projectOther">Other</label>
-                          </div>
+                      <div class="col-md-12 my-3"> 
+                         <label class="form-label" for="coordinator">Project Type</label>
+                        <div class="card-body p-0"> 
+                            <input class="some_class_name w-100" name="input-custom-dropdown" placeholder="write some tags" value="Web Site, Application">
                         </div>
+                      </div>
                       <div class="col-md-6 position-relative">
                         <label class="form-label" for="validationTooltipContactprojectamount">Project Amount in INR</label>
                         <input class="form-control" id="validationTooltipContactprojectamount" type="Number" required="">
@@ -420,113 +393,6 @@
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
 
-                     <div class="col-md-6">
-                          <label class="form-label">Select Cordinate Person </label>
-                          <select class="single-select form-select">
-                            <option selected disabled value="">Choose...</option>
-                            <option value="john_doe">John Doe</option>
-                            <option value="riya_mehta">Riya Mehta</option>
-                            <option value="sam_wilson">Sam Wilson</option>
-                            <option value="aarti_shah">Aarti Shah</option>
-                            <option value="michael_fernandez">Michael Fernandez</option>
-                          </select>
-                      </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipContactNumber">Cordinate Contact Number</label>
-                        <input class="form-control" id="validationTooltipContactNumber" type="tel" value="+91 95865 96385" required="" disabled>
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>    
-                       <div class="col-md-12 position-relative mt-0">
-                        <label class="form-label" for="validationTooltipAddress">Address</label>
-                        <textarea name="" id="validationTooltipAddress" class="w-100 border-light-subtle rounded"></textarea>
-                        <div class="invalid-tooltip">Looks good!</div>
-                      </div>             
-                      <div class="col-md-6">
-                          <label class="form-label">Select City </label>
-                          <select class="single-select">
-                            <option selected disabled value="">Choose...</option>
-                            <option value="mumbai">Mumbai</option>
-                             <option value="delhi">Delhi</option>
-                             <option value="bangalore">Bangalore</option>
-                             <option value="ahmedabad">Ahmedabad</option>
-                             <option value="chennai">Chennai</option>
-                             <option value="kolkata">Kolkata</option>
-                             <option value="pune">Pune</option>
-                             <option value="surat">Surat</option>
-                             <option value="hyderabad">Hyderabad</option>
-                             <option value="jaipur">Jaipur</option>
-                             <option value="indore">Indore</option>
-                             <option value="lucknow">Lucknow</option>
-                             <option value="bhopal">Bhopal</option>
-                             <option value="patna">Patna</option>
-                             <option value="vadodara">Vadodara</option>
-                             <option value="rajkot">Rajkot</option>
-                             <option value="amritsar">Amritsar</option>
-                             <option value="coimbatore">Coimbatore</option>
-                             <option value="nashik">Nashik</option>
-                             <option value="kanpur">Kanpur</option>
-                          </select>
-                      </div>
-                      <div class="col-md-6">
-                          <label class="form-label">Select State </label>
-                          <select class="single-select">
-                            <option selected disabled value="">Choose...</option>
-                            <option value="mh">Maharashtra</option>
-                            <option value="gj">Gujarat</option>
-                            <option value="dl">Delhi</option>
-                            <option value="ka">Karnataka</option>
-                            <option value="tn">Tamil Nadu</option>
-                            <option value="up">Uttar Pradesh</option>
-                            <option value="wb">West Bengal</option>
-                            <option value="ap">Andhra Pradesh</option>
-                            <option value="rj">Rajasthan</option>
-                            <option value="pb">Punjab</option>
-                            <option value="br">Bihar</option>
-                            <option value="mp">Madhya Pradesh</option>
-                            <option value="od">Odisha</option>
-                            <option value="hr">Haryana</option>
-                            <option value="jk">Jammu & Kashmir</option>
-                            <option value="kl">Kerala</option>
-                            <option value="as">Assam</option>
-                            <option value="jh">Jharkhand</option>
-                            <option value="cg">Chhattisgarh</option>
-                            <option value="ut">Uttarakhand</option>
-                          </select>
-                      </div>
-                      <div class="col-md-6 mt-0">
-                          <label class="form-label">Select Country </label>
-                          <select class="single-select">
-                            <option selected disabled value="">Choose...</option>
-                            <option value="us">United States</option>
-                            <option value="in">India</option>
-                            <option value="uk">United Kingdom</option>
-                            <option value="ca">Canada</option>
-                            <option value="au">Australia</option>
-                            <option value="de">Germany</option>
-                            <option value="fr">France</option>
-                            <option value="it">Italy</option>
-                            <option value="jp">Japan</option>
-                            <option value="br">Brazil</option>
-                            <option value="za">South Africa</option>
-                            <option value="cn">China</option>
-                            <option value="ru">Russia</option>
-                            <option value="ng">Nigeria</option>
-                            <option value="ar">Argentina</option>
-                            <option value="mx">Mexico</option>
-                            <option value="es">Spain</option>
-                            <option value="kr">South Korea</option>
-                            <option value="se">Sweden</option>
-                            <option value="nl">Netherlands</option>
-                          </select>
-                      </div>
-
-                      <div class="col-md-6 mt-0">
-                        <label class="form-label" for="validationCustom05">Zip</label>
-                        <input class="form-control" id="validationCustom05" type="text" required="">
-                        <div class="invalid-feedback">Please provide a valid zip.</div>
-                        <div class="valid-feedback">
-                           Looks's Good!</div>
-                      </div> 
                       <div class="col-md-6 mt-0">
                         <label class="form-label" for="validationTooltipRefference">Refference</label>
                         <input class="form-control" id="validationTooltipRefference" type="text">
@@ -539,7 +405,7 @@
                         <div class="valid-feedback">
                            Looks's Good!</div>
                       </div> 
-                      <div class="col-md-6 d-flex align-items-center mb-2">
+                      <div class="col-md-12 d-flex align-items-center mb-2">
                           <div class="form-check-size">
                             <div><h6 class="sub-title p-0">Active</h6></div>
                             <div class="form-check form-switch form-check-inline">
@@ -547,8 +413,26 @@
                             </div>
                           </div>
                       </div>
-                      <div class="col-md-12 mt-0">
+                      <div class="col-md-6 mt-0">
                         <label class="form-label" for="validationDomain">Domain Name</label>
+                        <input class="form-control" id="validationDomain" type="text">
+                        <div class="valid-feedback">
+                           Looks's Good!</div>
+                      </div> 
+                      <div class="col-md-6 mt-0">
+                        <label class="form-label" for="validationDomain">Server Name</label>
+                        <input class="form-control" id="validationDomain" type="text">
+                        <div class="valid-feedback">
+                           Looks's Good!</div>
+                      </div> 
+                      <div class="col-md-6 mt-0">
+                        <label class="form-label" for="validationDomain">Hostinger</label>
+                        <input class="form-control" id="validationDomain" type="text">
+                        <div class="valid-feedback">
+                           Looks's Good!</div>
+                      </div> 
+                      <div class="col-md-6 mt-0">
+                        <label class="form-label" for="validationDomain">Bigroak </label>
                         <input class="form-control" id="validationDomain" type="text">
                         <div class="valid-feedback">
                            Looks's Good!</div>
@@ -672,11 +556,14 @@
       </div>
     </div>
     <script>
-  function toggleDomainFields() {
+function toggleDomainFields() {
     const checkbox = document.getElementById("invalidCheck");
     const domainFields = document.getElementById("domainFields");
-    domainFields.style.display = checkbox.checked ? "flex" : "none";
+
+    // Hide domain fields when checkbox is checked
+    domainFields.style.display = checkbox.checked ? "none" : "flex";
   }
+
 
   // Run on page load in case JS loads after DOM
   toggleDomainFields();
