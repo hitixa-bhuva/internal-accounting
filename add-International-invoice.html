@@ -292,7 +292,7 @@
                   <div class="card-body">
                     <form class="row g-3 needs-validation custom-input" novalidate="">
                         <div class="col-md-12">
-                          <label class="form-label">Select Client</label>
+                          <label class="form-label">Select Company</label>
                           <select class="single-select form-select">
                             <option selected disabled value="">Choose...</option>
                             <option value="john_doe">John Doe</option>
@@ -340,12 +340,12 @@
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
                        <div class="col-md-6 position-relative">
-                        <label class="form-label" for="Companygst">GST IN</label>
-                        <input class="form-control" id="Companygst" type="text" value="09AAACH7409R1ZZ" required="" disabled>
+                        <label class="form-label" for="Companygst">Vat ID</label>
+                        <input class="form-control" id="Companygst" type="text" value="09AAACH7409R1ZZ" required="" >
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
                       <div class="col-md-12 position-relative">
-                        <label class="form-label" for="GSTFirmAddress">GST Firm Address</label>
+                        <label class="form-label" for="GSTFirmAddress">Address</label>
                         <input class="form-control" id="GSTFirmAddress" type="text" value="GUJARAT" required="" disabled>
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
@@ -368,11 +368,7 @@
                         <input class="form-control" id="validationTooltipAttachmentamount" type="text" required="">
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
-                      <div class="col-md-5 position-relative">
-                        <label class="form-label" for="validationTooltipAttachmentService Code">Service Code</label>
-                        <input class="form-control" id="validationTooltipAttachmentService Code" type="text" required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
+                      
                       <div class="col-md-1 d-flex justify-content-center align-items-end">
                         <button class="btn btn-primary" type="submit">Add</button>
                       </div>
@@ -384,7 +380,6 @@
                         <tr class="border-bottom-primary">
                           <th scope="col">No</th>
                           <th scope="col">Description</th>
-                          <th scope="col">Service Code</th>
                           <th scope="col">Total</th>
                           <th scope="col" class="text-nowrap">Action</th>
                         </tr>
@@ -393,7 +388,6 @@
                         <tr>
                             <td>1</td>
                              <td>Website Design & Development</td>
-                             <td>WD001</td>
                              <td>₹25,000</td>
                            <td>
                              <a class="btn btn-sm btn-danger bg-danger deleteItem text-white" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete File">
@@ -404,7 +398,6 @@
                          <tr>
                             <td>2</td>
                             <td>Mobile App Development</td>
-                            <td>APP102</td>
                             <td>₹40,000</td>
                            <td>
                              <a class="btn btn-sm btn-danger bg-danger deleteItem text-white" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete File">
