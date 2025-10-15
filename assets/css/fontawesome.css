@@ -4320,7 +4320,7 @@ readers do not read off random characters that represent icons */
   content: "\f5b3";
 }
 
-.fa-audio-description::before {
+.fa-audio-Remarks::before {
   content: "\f29e";
 }
 

@@ -51,7 +51,7 @@ var DataTable = $.fn.dataTable;
 
 /**
  * @summary     RowReorder
- * @description Row reordering extension for DataTables
+ * @Remarks Row reordering extension for DataTables
  * @version     1.5.0
  * @author      SpryMedia Ltd
  * @contact     datatables.net

@@ -4,7 +4,7 @@
 
 /**
  * @summary     DataTables
- * @description Paginate, search and order HTML tables
+ * @Remarks Paginate, search and order HTML tables
  * @version     2.0.3
  * @author      SpryMedia Ltd
  * @contact     www.datatables.net
@@ -698,7 +698,7 @@
 		 * {@link DataTable.ext.renderer.pageButton}. The renderer addresses how the
 		 * buttons are displayed in the document, while the functions here tell it
 		 * what buttons to display. This is done by returning an array of button
-		 * descriptions (what each button will do).
+		 * Remarkss (what each button will do).
 		 *
 		 * Pagination types (the four built in options and any additional plug-in
 		 * options defined here) can be used through the `paginationType`
@@ -9951,7 +9951,7 @@
 		 * [jQuery.ajax](https://api.jquery.com/jQuery.ajax/) allowing fine control
 		 * of the Ajax request. DataTables has a number of default parameters which
 		 * you can override using this option. Please refer to the jQuery
-		 * documentation for a full description of the options available, although
+		 * documentation for a full Remarks of the options available, although
 		 * the following parameters provide additional options in DataTables or
 		 * require special consideration:
 		 *
@@ -11850,7 +11850,7 @@
 		 * {@link DataTable.ext.renderer.pageButton}. The renderer addresses how the
 		 * buttons are displayed in the document, while the functions here tell it
 		 * what buttons to display. This is done by returning an array of button
-		 * descriptions (what each button will do).
+		 * Remarkss (what each button will do).
 		 *
 		 * Pagination types (the four built in options and any additional plug-in
 		 * options defined here) can be used through the `paginationType`

@@ -51,7 +51,7 @@ var DataTable = $.fn.dataTable;
 
 /**
  * @summary     Responsive
- * @description Responsive tables plug-in for DataTables
+ * @Remarks Responsive tables plug-in for DataTables
  * @version     3.0.2
  * @author      SpryMedia Ltd
  * @copyright   SpryMedia Ltd.
@@ -924,7 +924,7 @@ $.extend(Responsive.prototype, {
 	 * Find a breakpoint object from a name
 	 *
 	 * @param  {string} name Breakpoint name to find
-	 * @return {object}      Breakpoint description object
+	 * @return {object}      Breakpoint Remarks object
 	 * @private
 	 */
 	_find: function (name) {

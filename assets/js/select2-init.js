@@ -94,8 +94,8 @@
         "<div class='select2-result-repository__meta'>" +
           "<div class='select2-result-repository__title'>" + repo.full_name + "</div>";
     
-      if (repo.description) {
-        markup += "<div class='select2-result-repository__description'>" + repo.description + "</div>";
+      if (repo.Remarks) {
+        markup += "<div class='select2-result-repository__Remarks'>" + repo.Remarks + "</div>";
       }
     
       markup += "<div class='select2-result-repository__statistics'>" +

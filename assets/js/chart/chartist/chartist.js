@@ -2870,7 +2870,7 @@
       });
     })(window, document, Chartist);
     /**
-     * Chartist SVG path module for SVG path description creation and modification.
+     * Chartist SVG path module for SVG path Remarks creation and modification.
      *
      * @module Chartist.Svg.Path
      */
@@ -2884,7 +2884,7 @@
        * @memberof Chartist.Svg.Path
        * @type {Object}
        */
-      var elementDescriptions = {
+      var elementRemarkss = {
         m: ["x", "y"],
         l: ["x", "y"],
         c: ["x1", "y1", "x2", "y2", "x", "y"],
@@ -2916,7 +2916,7 @@
 
       function forEachParam(pathElements, cb) {
         pathElements.forEach(function (pathElement, pathElementIndex) {
-          elementDescriptions[pathElement.command.toLowerCase()].forEach(
+          elementRemarkss[pathElement.command.toLowerCase()].forEach(
             function (paramName, paramIndex) {
               cb(
                 pathElement,
@@ -3118,17 +3118,17 @@
           chunks.pop();
         }
 
-        // Using svgPathElementDescriptions to map raw path arrays into objects that contain the command and the parameters
+        // Using svgPathElementRemarkss to map raw path arrays into objects that contain the command and the parameters
         // For example {command: 'M', x: '10', y: '10'}
         var elements = chunks.map(function (chunk) {
           var command = chunk.shift(),
-            description = elementDescriptions[command.toLowerCase()];
+            Remarks = elementRemarkss[command.toLowerCase()];
 
           return Chartist.extend(
             {
               command: command,
             },
-            description.reduce(function (result, paramName, index) {
+            Remarks.reduce(function (result, paramName, index) {
               result[paramName] = +chunk[index];
               return result;
             }, {})
@@ -3157,7 +3157,7 @@
         return (
           this.pathElements.reduce(
             function (path, pathElement) {
-              var params = elementDescriptions[
+              var params = elementRemarkss[
                 pathElement.command.toLowerCase()
               ].map(
                 function (paramName) {
@@ -3214,7 +3214,7 @@
        * If something else than undefined is returned by the callback function, this value will be used to replace the old value. This allows you to build custom transformations of path objects that can't be achieved using the basic transformation functions scale and translate.
        *
        * @memberof Chartist.Svg.Path
-       * @param {Function} transformFnc The callback function for the transformation. Check the signature in the function description.
+       * @param {Function} transformFnc The callback function for the transformation. Check the signature in the function Remarks.
        * @return {Chartist.Svg.Path} The current path object for easy call chaining.
        */
       function transform(transformFnc) {
@@ -3323,7 +3323,7 @@
         splitByCommand: splitByCommand,
       });
 
-      Chartist.Svg.Path.elementDescriptions = elementDescriptions;
+      Chartist.Svg.Path.elementRemarkss = elementRemarkss;
       Chartist.Svg.Path.join = join;
     })(window, document, Chartist); /* global Chartist */
     (function (window, document, Chartist) {
@@ -3735,7 +3735,7 @@
         showArea: false,
         // The base for the area chart that will be used to close the area shape (is normally 0)
         areaBase: 0,
-        // Specify if the lines should be smoothed. This value can be true or false where true will result in smoothing using the default smoothing interpolation function Chartist.Interpolation.cardinal and false results in Chartist.Interpolation.none. You can also choose other smoothing / interpolation functions available in the Chartist.Interpolation module, or write your own interpolation function. Check the examples for a brief description.
+        // Specify if the lines should be smoothed. This value can be true or false where true will result in smoothing using the default smoothing interpolation function Chartist.Interpolation.cardinal and false results in Chartist.Interpolation.none. You can also choose other smoothing / interpolation functions available in the Chartist.Interpolation module, or write your own interpolation function. Check the examples for a brief Remarks.
         lineSmooth: true,
         // If the line chart should add a background fill to the .ct-grids group.
         showGridBackground: false,

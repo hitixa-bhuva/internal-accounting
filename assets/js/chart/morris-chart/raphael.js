@@ -95,7 +95,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     - height (number)
 	     - callback (function) #optional callback function which is going to be executed in the context of newly created paper
 	     * or
-	     - all (array) (first 3 or 4 elements in the array are equal to [containerID, width, height] or [x, y, width, height]. The rest are element descriptions in format {type: type, <attributes>}). See @Paper.add.
+	     - all (array) (first 3 or 4 elements in the array are equal to [containerID, width, height] or [x, y, width, height]. The rest are element Remarkss in format {type: type, <attributes>}). See @Paper.add.
 	     - callback (function) #optional callback function which is going to be executed in the context of newly created paper
 	     * or
 	     - onReadyCallback (function) function that is going to be called on DOM ready event. You can also subscribe to this event via Eve’s “DOMLoad” event. In this case method returns `undefined`.

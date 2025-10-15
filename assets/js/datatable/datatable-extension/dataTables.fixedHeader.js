@@ -51,7 +51,7 @@ var DataTable = $.fn.dataTable;
 
 /**
  * @summary     FixedHeader
- * @description Fix a table's header or footer, so it is always visible while
+ * @Remarks Fix a table's header or footer, so it is always visible while
  *              scrolling
  * @version     4.0.1
  * @author      SpryMedia Ltd

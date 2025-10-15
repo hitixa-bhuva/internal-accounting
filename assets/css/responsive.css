@@ -1171,10 +1171,10 @@
   .lg-mt {
     margin-top: 20px;
   }
-  .gallery-with-description {
+  .gallery-with-Remarks {
     margin-bottom: -20px;
   }
-  .gallery-with-description a > div {
+  .gallery-with-Remarks a > div {
     margin-bottom: 20px;
   }
   .clipboaard-container p {
@@ -1956,7 +1956,7 @@
   .my-gallery figure:nth-child(9), .my-gallery figure:nth-child(10) {
     margin-bottom: 15px;
   }
-  .my-gallery.gallery-with-description figure:last-child {
+  .my-gallery.gallery-with-Remarks figure:last-child {
     margin-bottom: 20px;
   }
   #aniimated-thumbnials figure:nth-child(12), #aniimated-thumbnials figure:nth-child(11), #aniimated-thumbnials figure:nth-child(10), #aniimated-thumbnials figure:nth-child(9) {
@@ -2586,7 +2586,7 @@
   .reset-password-box .theme-form .form-group .btn {
     margin-top: 13px !important;
   }
-  .gallery-with-description a > div {
+  .gallery-with-Remarks a > div {
     margin-bottom: 15px;
   }
   .gallery-img-mb-sm {

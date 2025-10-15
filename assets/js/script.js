@@ -2,7 +2,7 @@
 
     Template Name: Paris Admin
     Template URI: http://admin.pixelstrap.net/paris/template
-    Description: This is Admin theme
+    Remarks: This is Admin theme
     Author: Pixelstrap
     Author URI: https://themeforest.net/user/pixelstrap
 

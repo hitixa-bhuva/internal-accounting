@@ -89,7 +89,7 @@ function _fadeOut(el, duration, fn) {
 }
 
 /**
- * [Buttons description]
+ * [Buttons Remarks]
  * @param {[type]}
  * @param {[type]}
  */
@@ -740,7 +740,7 @@ $.extend(Buttons.prototype, {
 	 * Create an individual button
 	 * @param  {object} config            Resolved button configuration
 	 * @param  {boolean} inCollection `true` if a collection button
-	 * @return {object} Completed button description object
+	 * @return {object} Completed button Remarks object
 	 * @private
 	 */
 	_buildButton: function (config, inCollection, isSplit, inSplit) {

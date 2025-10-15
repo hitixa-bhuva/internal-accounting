@@ -149,7 +149,7 @@
             font-style: italic;
         }
 
-        .client-view-remarks {
+        .client-view-Remarks {
             grid-column: 1 / -1          ;
             background-color: #ffffff;
             /* border: 1px solid #e4e7ec; */

@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Paris admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="Remarks" content="Paris admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Paris admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
@@ -269,160 +269,122 @@
               <div class="col-sm-12">
                 <div class="card shadow">
                   <div class="card-body">
-                    <form class="row g-3 needs-validation custom-input" novalidate="">
-                      <div class="col-md-6">
-                          <label class="form-label text-dark">Select Vendor </label>
-                          <select class="single-select">
-                            <option selected disabled value="">Choose...</option>
-                            <option value="ac">Acme Corp</option>
-                            <option value="ev">EVERGREEN LEATHER</option>
-                            <option value="lu">LUXURIUS COLLECTION</option>
-                            <option value="ma">MAGNUM COLLECTION</option>
-                            <option value="ne">NEXA LEATHER</option>
-                            <option value="sty">STYRISH LEATHER COLLECTION</option>
-                            <option value="vo">VOLVO VISENZA</option>
-                          </select>
-                      </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipContact">Contact No</label>
-                        <input class="form-control" id="validationTooltipContact" type="text"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative mt-0">
-                        <label class="form-label" for="validationTooltipGST">GST</label>
-                        <input class="form-control" id="validationTooltipGST" type="text"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative mt-0">
-                        <label class="form-label" for="validationTooltipcolorname">Purchase Bill</label>
-                        <input class="form-control digits" type="date" value="2018-01-15">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-12 position-relative">
-                        <label class="form-label" for="validationTooltipPurchaseBillNumber">Purchase Bill Number</label>
-                        <input class="form-control" id="validationTooltipPurchaseBillNumber" type="text"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                     <div class="col-12"> 
-                        <label class="form-label" for="formFile">Bill Doc</label>
-                        <input class="form-control" id="formFile" type="file" required="">
-                      </div>
-                    </form>
+          <form class="row g-3 needs-validation" novalidate>
+            <!-- Vendor Selection -->
+            <div class="col-md-6">
+              <label for="vendorSelect" class="form-label">Select Vendor</label>
+              <select class="form-select" id="vendorSelect" required>
+                <option selected disabled value="">Choose...</option>
+                <option value="ac">Acme Corp</option>
+                <option value="ev">EVERGREEN LEATHER</option>
+                <option value="lu">LUXURIUS COLLECTION</option>
+                <option value="ma">MAGNUM COLLECTION</option>
+                <option value="ne">NEXA LEATHER</option>
+                <option value="sty">STYRISH LEATHER COLLECTION</option>
+                <option value="vo">VOLVO VISENZA</option>
+              </select>
+              <div class="invalid-feedback">Please select a vendor.</div>
+            </div>
+
+            <!-- Contact Number -->
+            <div class="col-md-6">
+              <label for="validationTooltipContact" class="form-label">Contact No</label>
+              <input type="text" class="form-control" id="validationTooltipContact" required>
+              <div class="valid-tooltip">Looks good!</div>
+              <div class="invalid-feedback">Please provide a contact number.</div>
+            </div>
+
+            <!-- GST -->
+            <div class="col-md-6">
+              <label for="validationTooltipGST" class="form-label">GST</label>
+              <input type="text" class="form-control" id="validationTooltipGST" required>
+              <div class="valid-tooltip">Looks good!</div>
+              <div class="invalid-feedback">Please provide a GST number.</div>
+            </div>
+
+            <!-- Purchase Bill Date -->
+            <div class="col-md-6">
+              <label for="validationTooltipPurchaseBill" class="form-label">Purchase Bill Date</label>
+              <input type="date" class="form-control" id="validationTooltipPurchaseBill" value="2018-01-15" required>
+              <div class="valid-tooltip">Looks good!</div>
+              <div class="invalid-feedback">Please select a purchase bill date.</div>
+            </div>
+
+            <!-- Purchase Bill Number -->
+            <div class="col-md-12">
+              <label for="validationTooltipPurchaseBillNumber" class="form-label">Purchase Bill Number</label>
+              <input type="text" class="form-control" id="validationTooltipPurchaseBillNumber" required>
+              <div class="valid-tooltip">Looks good!</div>
+              <div class="invalid-feedback">Please provide a purchase bill number.</div>
+            </div>
+
+            <!-- CGST -->
+            <div class="col-md-6">
+              <label for="validationTooltipcgst" class="form-label">CGST (%)</label>
+              <input type="number" class="form-control" id="validationTooltipcgst" required>
+              <div class="valid-tooltip">Looks good!</div>
+              <div class="invalid-feedback">Please provide CGST percentage.</div>
+            </div>
+
+            <!-- SGST -->
+            <div class="col-md-6">
+              <label for="validationTooltipSgst" class="form-label">SGST (%)</label>
+              <input type="number" class="form-control" id="validationTooltipSgst" required>
+              <div class="valid-tooltip">Looks good!</div>
+              <div class="invalid-feedback">Please provide SGST percentage.</div>
+            </div>
+
+            <!-- Bill Document Upload -->
+            <div class="col-12">
+              <label for="formFile" class="form-label">Bill Document</label>
+              <input type="file" class="form-control" id="formFile" required>
+              <div class="invalid-feedback">Please upload a bill document.</div>
+            </div>
+
+            <!-- Add Button -->
+            <div class="col-12 text-center">
+              <button class="btn btn-primary" type="button" onclick="addToTable()">Add</button>
+            </div>
+
+            <!-- Purchase Bill List (Table) -->
+            <div class="table-responsive mt-4">
+              <table class="table table-bordered table-hover" id="purchaseTable">
+                <thead class="table-primary">
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Vendor Name</th>
+                    <th scope="col">SGST</th>
+                    <th scope="col">CGST</th>
+                    <th scope="col">GST</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Kerol ShieldPro</td>
+                    <td>9%</td>
+                    <td>9%</td>
+                    <td>9%</td>
+                    <td>
+                      <button class="btn btn-sm btn-danger delete-action" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" onclick="deleteRow(this)">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Save and Cancel Buttons -->
+            <div class="col-12 text-center mt-4">
+              <button class="btn btn-success me-2" type="submit">Save</button>
+              <button class="btn btn-danger" type="button" onclick="this.closest('form').reset()">Cancel</button>
+            </div>
+          </form>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12">
-                <h5 class="mb-2">Select Color</h5>
-                <div class="card shadow">
-                  <div class="card-body">
-                    <form class="row g-3 needs-validation custom-input" novalidate="">
-                       <div class="col-md-6">
-                          <label class="form-label text-dark">Select Item </label>
-                          <select class="single-select">
-                            <option selected disabled value="">Choose...</option>
-                            <option value="ec">ECO SCODA COVENTRY</option>
-                            <option value="ev">EVERGREEN LEATHER</option>
-                            <option value="lu">LUXURIUS COLLECTION</option>
-                            <option value="ma">MAGNUM COLLECTION</option>
-                            <option value="ne">NEXA LEATHER</option>
-                            <option value="sty">STYRISH LEATHER COLLECTION</option>
-                            <option value="vo">VOLVO VISENZA</option>
-                          </select>
-                      </div>
-                       <div class="col-md-6">
-                          <label class="form-label text-dark">Select Color </label>
-                          <select class="single-select">
-                            <option selected disabled value="">Choose...</option>
-                            <option value="ro">Rose Taupe</option>
-                            <option value="be">	Beige Sandstone</option>
-                            <option value="gr">Graphite Grey</option>
-                          </select>
-                      </div>
-                      <div class="col-md-6 position-relative mt-0">
-                        <label class="form-label" for="validationTooltipcProductWithoutTaxMtr">Product Without Tax / Mtr</label>
-                        <input class="form-control" id="validationTooltipcProductWithoutTaxMtr" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative mt-0">
-                        <label class="form-label" for="validationTooltipcProductWithoutTaxRoll">Product Without Tax / Roll</label>
-                        <input class="form-control" id="validationTooltipcProductWithoutTaxRoll" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipcgst">CGST</label>
-                        <input class="form-control" id="validationTooltipcgst" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipSgst">SGST</label>
-                        <input class="form-control" id="validationTooltipSgst" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-5 position-relative">
-                        <label class="form-label" for="validationTooltipQuantityMtr">Quantity / Mtr</label>
-                        <input class="form-control" id="validationTooltipQuantityMtr" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-5 position-relative">
-                        <label class="form-label" for="validationTooltipQuantityRoll">Quantity / Roll</label>
-                        <input class="form-control" id="validationTooltipQuantityRoll" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-2   d-flex justify-content-center align-items-end">
-                        <button class="btn btn-primary" type="submit">Add</button>
-                      </div>
-                    </form>
-                  </div>
-                  
-                    <div class="col-sm-12 px-2 mt-3">
-                <div class="card shadow">
-                  <div class="table-responsive custom-scrollbar">
-                    <table class="table border-bottom-table">
-                      <thead>
-                        <tr class="border-bottom-primary">
-                          <th scope="col">No</th>
-                          <th scope="col">Color Name</th>
-                          <th scope="col">SGST</th>
-                          <th scope="col">CGST</th>
-                          <th scope="col">Product Without Tax / Mtr</th>
-                          <th scope="col">Product Without Tax / Roll</th>
-                          <th scope="col">Quantity / Roll</th>
-                          <th scope="col">Quantity / Mrt</th>
-                          <th scope="col">Action <small>(Remove)</small></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                         <tr>
-                          <td>1</td>
-                          <td>Kerol ShieldPro</td>
-                          <td>9%</td>
-                          <td>9%</td>
-                          <td>₹120.00</td>
-                          <td>₹2400.00</td>
-                          <td>20 Roll</td>
-                          <td>200 Mtr</td>
-                          <td>
-                            <a href="#" 
-                                 class="btn btn-sm delete-action deleteItem me-1" 
-                                 data-bs-toggle="tooltip" 
-                                 data-bs-placement="top" 
-                                 title="Delete">
-                                <i class="fas fa-trash"></i>
-                              </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div class="col-md-12 text-center mb-3">
-                  <button class="btn btn-success-gradien" type="submit">Save</button>
-                  <button class="btn btn-danger-gradien" type="submit">Save</button>
-                </div>
-              </div>
-                </div>
-                
-              </div>  
             </div>
             
           </div>

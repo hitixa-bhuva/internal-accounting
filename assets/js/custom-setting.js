@@ -17,7 +17,7 @@ function delivery_fields() {
   divtest.setAttribute("class", "form-group removeclass" + room);
   var rdiv = "removeclass" + room;
   divtest.innerHTML =
-    '<div class="row g-2"> <div class="col-sm-6"> <input class="form-control" id="baseItemName" type="text" name="baseItemName[]" value="" placeholder="Enter Title"> </div> <div class="col-sm-6"> <input class="form-control" id="basePrice" type="text" name="basePrice[]" value="" placeholder="Enter Description"> </div> <div class="col-12"> <div class="input-group-btn"> <button class="btn btn-danger" onclick="remove_delivery_fields(' +
+    '<div class="row g-2"> <div class="col-sm-6"> <input class="form-control" id="baseItemName" type="text" name="baseItemName[]" value="" placeholder="Enter Title"> </div> <div class="col-sm-6"> <input class="form-control" id="basePrice" type="text" name="basePrice[]" value="" placeholder="Enter Remarks"> </div> <div class="col-12"> <div class="input-group-btn"> <button class="btn btn-danger" onclick="remove_delivery_fields(' +
     room +
     ');" type="button"> Remove</button> </div> </div> <div class="clear"></div> </div>';
 

@@ -51,7 +51,7 @@ var DataTable = $.fn.dataTable;
 
 /**
  * @summary     KeyTable
- * @description Spreadsheet like keyboard navigation for DataTables
+ * @Remarks Spreadsheet like keyboard navigation for DataTables
  * @version     2.12.1
  * @file        dataTables.keyTable.js
  * @author      SpryMedia Ltd

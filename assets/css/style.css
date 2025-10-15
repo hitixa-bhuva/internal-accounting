@@ -3,7 +3,7 @@
 
     Template Name: Paris Admin
     Template URI: http://admin.pixelstrap.net/paris/template
-    Description: This is Admin theme
+    Remarks: This is Admin theme
     Author: Pixelstrap
     Author URI: https://themeforest.net/user/pixelstrap
 
@@ -19397,7 +19397,7 @@ input[type=number] {
   color: #898989;
 }
 
-.ProfileCard-description {
+.ProfileCard-Remarks {
   margin-top: 5px;
   font-size: 14px;
   line-height: 18px;
@@ -30354,20 +30354,20 @@ p.data-attributes svg {
   border-radius: 0;
 }
 
-.gallery-with-description {
+.gallery-with-Remarks {
   margin-bottom: -30px;
 }
-.gallery-with-description a > div {
+.gallery-with-Remarks a > div {
   padding: 10px;
   border: 1px solid rgba(204, 204, 204, 0.6);
   margin-bottom: 30px;
   border-radius: 0 0 5px 5px;
 }
-.gallery-with-description a:hover {
+.gallery-with-Remarks a:hover {
   text-decoration: none !important;
 }
 @media (max-width: 1599px) {
-  .gallery-with-description a .caption p {
+  .gallery-with-Remarks a .caption p {
     display: -webkit-box;
     max-width: 100%;
     -webkit-line-clamp: 3;
@@ -30377,12 +30377,12 @@ p.data-attributes svg {
     text-overflow: ellipsis;
   }
 }
-.gallery-with-description h4 {
+.gallery-with-Remarks h4 {
   color: #1C1B20;
   margin-top: 15px;
   font-size: calc(16px + 2 * (100vw - 320px) / 1600);
 }
-.gallery-with-description p {
+.gallery-with-Remarks p {
   color: #a3a3a3;
   display: -webkit-box;
   max-width: 100%;
@@ -30744,43 +30744,43 @@ p.data-attributes svg {
   border: 1px solid #dee2e6;
 }
 
-.gallery-with-description .grid-item img {
+.gallery-with-Remarks .grid-item img {
   border: 0;
   padding: 0;
 }
 
-.my-gallery.gallery-with-description .pswp .pswp__img {
+.my-gallery.gallery-with-Remarks .pswp .pswp__img {
   border: none !important;
 }
-.my-gallery.gallery-with-description .pswp__caption__center h4 {
+.my-gallery.gallery-with-Remarks .pswp__caption__center h4 {
   color: #cccccc;
 }
-.my-gallery.gallery-with-description .pswp__caption__center p {
+.my-gallery.gallery-with-Remarks .pswp__caption__center p {
   color: #6C757D;
 }
-.my-gallery.gallery-with-description .pswp__caption__center ul {
+.my-gallery.gallery-with-Remarks .pswp__caption__center ul {
   display: none;
 }
 
-.gallery-description-skeleton {
+.gallery-Remarks-skeleton {
   padding: 20px;
 }
-.gallery-description-skeleton .skeleton-wrapper {
+.gallery-Remarks-skeleton .skeleton-wrapper {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
 }
-.gallery-description-skeleton .skeleton-wrapper .skeleton-image {
+.gallery-Remarks-skeleton .skeleton-wrapper .skeleton-image {
   width: 100%;
   height: 250px;
   background: linear-gradient(to right, rgba(137, 137, 137, 0.02) 2%, rgba(130, 130, 130, 0.02) 2%, rgba(137, 137, 137, 0.1) 14%);
   background-size: 800px 100px;
   animation: wave-square-lines 2s infinite ease-out;
 }
-.gallery-description-skeleton .skeleton-wrapper .skeleton-caption {
+.gallery-Remarks-skeleton .skeleton-wrapper .skeleton-caption {
   padding: 18px 0px 5px 0px;
 }
-.gallery-description-skeleton .skeleton-wrapper .skeleton-caption .skeleton-name {
+.gallery-Remarks-skeleton .skeleton-wrapper .skeleton-caption .skeleton-name {
   background: linear-gradient(to right, rgba(137, 137, 137, 0.02) 2%, rgba(130, 130, 130, 0.02) 2%, rgba(137, 137, 137, 0.1) 14%);
   background-size: 800px 100px;
   animation: wave-square-lines 2s infinite ease-out;
@@ -30789,7 +30789,7 @@ p.data-attributes svg {
   height: 20px;
   border-radius: 3px;
 }
-.gallery-description-skeleton .skeleton-wrapper .skeleton-caption .skeleton-desc {
+.gallery-Remarks-skeleton .skeleton-wrapper .skeleton-caption .skeleton-desc {
   background: linear-gradient(to right, rgba(137, 137, 137, 0.02) 2%, rgba(130, 130, 130, 0.02) 2%, rgba(137, 137, 137, 0.1) 14%);
   background-size: 800px 100px;
   animation: wave-square-lines 2s infinite ease-out;
@@ -30797,7 +30797,7 @@ p.data-attributes svg {
   height: 13px;
   border-radius: 3px;
 }
-.gallery-description-skeleton .skeleton-wrapper .skeleton-caption .skeleton-desc + .skeleton-desc {
+.gallery-Remarks-skeleton .skeleton-wrapper .skeleton-caption .skeleton-desc + .skeleton-desc {
   margin-top: 6px;
 }
 
@@ -31117,36 +31117,36 @@ p.data-attributes svg {
   margin-top: 0;
   color: #999999;
 }
-.job-search .job-description {
+.job-search .job-Remarks {
   margin-top: 20px;
 }
-.job-search .job-description h6 {
+.job-search .job-Remarks h6 {
   font-weight: 500;
   margin-bottom: 6px;
 }
-.job-search .job-description p {
+.job-search .job-Remarks p {
   margin-top: 0;
   margin-bottom: 6px;
 }
-.job-search .job-description ul:not(.job-apply-wrapper .job-search .job-description ul) {
+.job-search .job-Remarks ul:not(.job-apply-wrapper .job-search .job-Remarks ul) {
   list-style-type: disc;
   list-style-position: inside;
 }
-.job-search .job-description ul:not(.job-apply-wrapper .job-search .job-description ul) li {
+.job-search .job-Remarks ul:not(.job-apply-wrapper .job-search .job-Remarks ul) li {
   margin-bottom: 10px;
   color: rgba(82, 82, 108, 0.8);
 }
-.job-search .job-description ul:not(.job-apply-wrapper .job-search .job-description ul) li:last-child {
+.job-search .job-Remarks ul:not(.job-apply-wrapper .job-search .job-Remarks ul) li:last-child {
   margin-bottom: 0;
 }
-.job-search .job-description .theme-form {
+.job-search .job-Remarks .theme-form {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.job-search .job-description .theme-form .row div[class^=col-] + div[class^=col-] .select2-container {
+.job-search .job-Remarks .theme-form .row div[class^=col-] + div[class^=col-] .select2-container {
   margin-top: 18px;
 }
-.job-search .job-description .theme-form .row div[class^=col-] .input-group .datepicker-here {
+.job-search .job-Remarks .theme-form .row div[class^=col-] .input-group .datepicker-here {
   font-size: 14px;
   border: 1px solid #cccccc;
   padding-top: 12px;
@@ -31278,17 +31278,17 @@ p.data-attributes svg {
     margin-right: 20px;
     margin-left: unset;
   }
-  .job-search .job-description {
+  .job-search .job-Remarks {
     margin-top: 15px;
   }
-  .job-search .job-description .theme-form {
+  .job-search .job-Remarks .theme-form {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .job-search .job-description .theme-form .row div[class^=col-] + div[class^=col-] .select2-container {
+  .job-search .job-Remarks .theme-form .row div[class^=col-] + div[class^=col-] .select2-container {
     margin-top: 2px;
   }
-  .job-search .job-description .theme-form .xs-mt-period {
+  .job-search .job-Remarks .theme-form .xs-mt-period {
     margin-top: 15px;
   }
   .job-pagination {
@@ -31299,7 +31299,7 @@ p.data-attributes svg {
   }
 }
 @media only screen and (max-width: 360px) {
-  .job-search .job-description .btn {
+  .job-search .job-Remarks .btn {
     padding: 6px 12px;
   }
 }
@@ -31308,7 +31308,7 @@ p.data-attributes svg {
   right: 12px;
 }
 
-.job-apply-wrapper .job-search .job-description .theme-form .dropdown-toggle {
+.job-apply-wrapper .job-search .job-Remarks .theme-form .dropdown-toggle {
   height: 47px;
   padding: 12px;
 }
@@ -32311,7 +32311,7 @@ footer {
   left: 50%;
   margin-left: -30px;
 }
-.landing-page .title .main-title .description-title {
+.landing-page .title .main-title .Remarks-title {
   font-size: calc(18px + 22 * (100vw - 320px) / 1600);
   color: #1C1B20;
   margin-top: 5px;
@@ -32325,7 +32325,7 @@ footer {
 .landing-page .dark-bg {
   background: linear-gradient(179.96deg, #1D1D1D -10.51%, #4E4E4E 97.21%);
 }
-.landing-page .dark-bg .title .description-title {
+.landing-page .dark-bg .title .Remarks-title {
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -39678,30 +39678,30 @@ form header {
   color: rgba(28, 27, 32, 0.9);
 }
 
-.social-app-profile1 .social-app-profile .gallery-with-description .caption ul {
+.social-app-profile1 .social-app-profile .gallery-with-Remarks .caption ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.social-app-profile1 .social-app-profile .gallery-with-description .caption ul li {
+.social-app-profile1 .social-app-profile .gallery-with-Remarks .caption ul li {
   width: 100%;
   text-align: center;
 }
-.social-app-profile1 .social-app-profile .gallery-with-description .caption ul li + li {
+.social-app-profile1 .social-app-profile .gallery-with-Remarks .caption ul li + li {
   border-left: 1px solid #e9edf1;
 }
-[dir=rtl] .social-app-profile1 .social-app-profile .gallery-with-description .caption ul li + li {
+[dir=rtl] .social-app-profile1 .social-app-profile .gallery-with-Remarks .caption ul li + li {
   border-left: unset;
   border-right: 1px solid #e9edf1;
 }
-.social-app-profile1 .social-app-profile .gallery-with-description .caption ul li span {
+.social-app-profile1 .social-app-profile .gallery-with-Remarks .caption ul li span {
   margin-left: 6px;
   color: #999999;
 }
-[dir=rtl] .social-app-profile1 .social-app-profile .gallery-with-description .caption ul li span {
+[dir=rtl] .social-app-profile1 .social-app-profile .gallery-with-Remarks .caption ul li span {
   margin-left: unset;
   margin-right: 6px;
 }
-.social-app-profile1 .social-app-profile .gallery-with-description .caption ul li i {
+.social-app-profile1 .social-app-profile .gallery-with-Remarks .caption ul li i {
   color: #999999;
 }
 .social-app-profile1 .social-app-profile .social-friends .social-profile {
@@ -53187,7 +53187,7 @@ html[dir=rtl] .sitemap-wrapper .horizontal-sitemap .main-site li .main-root::aft
   .box-layout .main-tasks .email-left-aside .left-bookmark {
     height: auto;
   }
-  .box-layout .gallery-with-description a .caption p {
+  .box-layout .gallery-with-Remarks a .caption p {
     display: -webkit-box;
     max-width: 100%;
     -webkit-line-clamp: 3;
@@ -58050,13 +58050,13 @@ body.dark-only .search-page .audio-wrapper table.audio-table.table-hover tbody t
 body.dark-only .browse .browse-articles h6 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-body.dark-only .job-search .job-description ul:not(.job-apply-wrapper .job-search .job-description ul) li {
+body.dark-only .job-search .job-Remarks ul:not(.job-apply-wrapper .job-search .job-Remarks ul) li {
   color: rgba(255, 255, 255, 0.4);
 }
-body.dark-only .job-search .job-description .theme-form .row div[class^=col-] .input-group .datepicker-here {
+body.dark-only .job-search .job-Remarks .theme-form .row div[class^=col-] .input-group .datepicker-here {
   border: 1px solid #171717;
 }
-body.dark-only .job-search .job-description ul li {
+body.dark-only .job-search .job-Remarks ul li {
   color: rgba(255, 255, 255, 0.4);
 }
 body.dark-only .calendar-wrap .fc-unthemed td,
@@ -59064,13 +59064,13 @@ body.dark-only .page-wrapper .page-body-wrapper .page-body #viewhtml .render {
 body.dark-only .page-wrapper .page-body-wrapper .page-body .wizard-4 ul.anchor li a.disabled {
   color: #171717;
 }
-body.dark-only .page-wrapper .page-body-wrapper .page-body .gallery-with-description h4 {
+body.dark-only .page-wrapper .page-body-wrapper .page-body .gallery-with-Remarks h4 {
   color: rgba(255, 255, 255, 0.8);
 }
-body.dark-only .page-wrapper .page-body-wrapper .page-body .gallery-with-description a > div {
+body.dark-only .page-wrapper .page-body-wrapper .page-body .gallery-with-Remarks a > div {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-body.dark-only .page-wrapper .page-body-wrapper .page-body .gallery-with-description p {
+body.dark-only .page-wrapper .page-body-wrapper .page-body .gallery-with-Remarks p {
   color: rgba(255, 255, 255, 0.9);
 }
 body.dark-only .page-wrapper .page-body-wrapper .page-body .jsgrid-grid-header {
@@ -60761,7 +60761,7 @@ body.dark-only .token.boolean, body.dark-only .token.constant, body.dark-only .t
 body.dark-only .loader-box.card-loader {
   background-color: #232323;
 }
-body.dark-only .my-gallery.gallery-with-description img {
+body.dark-only .my-gallery.gallery-with-Remarks img {
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-bottom: none !important;
 }
@@ -62154,7 +62154,7 @@ body.dark-only .project-cards .project-list .main-card-box > .common-space {
 body.dark-only .project-cards .projects-wrapper .list-box .project-body .progress {
   background-color: rgba(255, 255, 255, 0.2);
 }
-body.dark-only .gallery-description-skeleton .skeleton-wrapper {
+body.dark-only .gallery-Remarks-skeleton .skeleton-wrapper {
   border-color: rgba(255, 255, 255, 0.1);
 }
 body.dark-only .job-accordion .location-checkbox label span {
@@ -62167,7 +62167,7 @@ body.dark-only .job-accordion .filter-cards-view .form-check .form-check-label .
 body.dark-only .job-accordion .animate-chk .form-check .form-check-label .number {
   color: rgba(255, 255, 255, 0.4);
 }
-body.dark-only .job-apply-wrapper .job-description input[type=text] {
+body.dark-only .job-apply-wrapper .job-Remarks input[type=text] {
   border: 1px solid transparent;
 }
 body.dark-only .social-app-profile .tab-pane .job-accordion .filter-cards-view p {
@@ -62179,7 +62179,7 @@ body.dark-only .social-app-profile1 .social-app-profile .social-friends .social-
 body.dark-only .social-app-profile1 .social-app-profile .social-friends .social-follow li + li::before {
   background-color: rgba(255, 255, 255, 0.2);
 }
-body.dark-only .social-app-profile1 .social-app-profile .gallery-with-description .caption ul li + li {
+body.dark-only .social-app-profile1 .social-app-profile .gallery-with-Remarks .caption ul li + li {
   border-left-color: rgba(255, 255, 255, 0.1);
 }
 body.dark-only .social-app-profile1 .social-app-profile .common-user-image .tabs-social .nav-item .nav-link.active {
