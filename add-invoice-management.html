@@ -376,7 +376,7 @@
                         <div class="row">
                              <div class="col-12 d-flex justify-content-end">
                         <div class="form-check">
-                          <input class="form-check-input" id="invalidCheck" type="checkbox" value="" required="">
+                          <input class="form-check-input" id="invalidCheck" type="checkbox" value="" onclick="toggleExtraField()" required="">
                           <label class="form-check-label" for="invalidCheck">Add One Fieled</label>
                           <div class="invalid-feedback">You must agree before submitting.</div>
                         </div>
@@ -530,7 +530,6 @@
         });
       });
     });
-
     function toggleExtraField() {
       const checkbox = document.getElementById("invalidCheck");
       const extraField = document.getElementById("extraField");
