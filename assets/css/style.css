@@ -5041,9 +5041,9 @@ code {
   border-radius: 2px;
 }
 
-span {
+/* span {
   display: inline-block;
-}
+} */
 
 .d-flex {
   display: flex;
