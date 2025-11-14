@@ -310,21 +310,12 @@
                   <div class="card-body">
           <form class="row g-3 needs-validation" novalidate>
             <!-- Vendor Selection -->
-            <div class="col-md-6">
-              <label for="vendorSelect" class="form-label">Select Vendor</label>
-              <select class="form-select" id="vendorSelect" required>
-                <option selected disabled value="">Choose...</option>
-                <option value="ac">Acme Corp</option>
-                <option value="ev">EVERGREEN LEATHER</option>
-                <option value="lu">LUXURIUS COLLECTION</option>
-                <option value="ma">MAGNUM COLLECTION</option>
-                <option value="ne">NEXA LEATHER</option>
-                <option value="sty">STYRISH LEATHER COLLECTION</option>
-                <option value="vo">VOLVO VISENZA</option>
-              </select>
-              <div class="invalid-feedback">Please select a vendor.</div>
+           <div class="col-md-6">
+              <label for="validationTooltipContact" class="form-label">Purchase bill name</label>
+              <input type="text" class="form-control" id="validationTooltipContact" required>
+              <div class="valid-tooltip">Looks good!</div>
+              <div class="invalid-feedback">Please provide a contact number.</div>
             </div>
-
             <!-- Contact Number -->
             <div class="col-md-6">
               <label for="validationTooltipContact" class="form-label">Contact No</label>
@@ -350,8 +341,14 @@
             </div>
 
             <!-- Purchase Bill Number -->
-            <div class="col-md-12">
+            <div class="col-md-6">
               <label for="validationTooltipPurchaseBillNumber" class="form-label">Purchase Bill Number</label>
+              <input type="text" class="form-control" id="validationTooltipPurchaseBillNumber" required>
+              <div class="valid-tooltip">Looks good!</div>
+              <div class="invalid-feedback">Please provide a purchase bill number.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationTooltipPurchaseBillNumber" class="form-label">Purchase Bill Amount</label>
               <input type="text" class="form-control" id="validationTooltipPurchaseBillNumber" required>
               <div class="valid-tooltip">Looks good!</div>
               <div class="invalid-feedback">Please provide a purchase bill number.</div>
@@ -378,41 +375,6 @@
               <label for="formFile" class="form-label">Bill Document</label>
               <input type="file" class="form-control" id="formFile" required>
               <div class="invalid-feedback">Please upload a bill document.</div>
-            </div>
-
-            <!-- Add Button -->
-            <div class="col-12 text-center">
-              <button class="btn btn-primary" type="button" onclick="addToTable()">Add</button>
-            </div>
-
-            <!-- Purchase Bill List (Table) -->
-            <div class="table-responsive mt-4">
-              <table class="table table-bordered table-hover" id="purchaseTable">
-                <thead class="table-primary">
-                  <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Vendor Name</th>
-                    <th scope="col">SGST</th>
-                    <th scope="col">CGST</th>
-                    <th scope="col">GST</th>
-                    <th scope="col">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Kerol ShieldPro</td>
-                    <td>9%</td>
-                    <td>9%</td>
-                    <td>9%</td>
-                    <td>
-                      <button class="btn btn-sm btn-danger delete-action" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" onclick="deleteRow(this)">
-                        <i class="fas fa-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
 
             <!-- Save and Cancel Buttons -->

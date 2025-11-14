@@ -15,17 +15,11 @@
     // init Tagify script on the above inputs
     tagify = new Tagify(input, {
       whitelist: [
-        "STYRISH LEATHER COLLECTION",
-        "LUXURIUS COLLECTION",
-        "SUPER NAPPA",
-        "NEXA LEATHER ",
-        "VOLVO VISENZA",
-        "MAGNUM COLLECTON",
-        "SAAKA NAPPA",
-        "EVERGREEN LEATHER",
-        "ECO SCODA COVENTRY 1.60",
-        "CARMATTING KU05 2.00 MM REGULAR ",
-        "CARMATTING KUV05 2.00MM REGULAR",
+        "Website",
+        "UI/UX Design",
+        "Web Application",
+        "Application",
+        "QR Code",
       ],
       maxTags: 10,
       dropdown: {

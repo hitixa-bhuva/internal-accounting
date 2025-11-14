@@ -2,17 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Remarks"
-    content="Paris admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
-  <meta name="keywords"
-    content="admin template, Paris admin template, dashboard template, flat admin template, responsive admin template, web app">
-  <meta name="author" content="pixelstrap">
   <link rel="icon" href="https://theuniqueitsolution.com/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="https://theuniqueitsolution.com/favicon.ico" type="image/x-icon">
-  <title>Form Validation | Paris - Premium Admin Template By Pixelstrap</title>
+  <title>Add Client</title>
   <!-- Google font-->
   <link href="../../css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
 
@@ -49,12 +41,10 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-
   <link rel="stylesheet" type="text/css" href="./assets/css/vendors/sweetalert2.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/vendors/tagify.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/select2.min.css">
-
 </head>
 
 <body>
@@ -147,7 +137,7 @@
           type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
       </div>
     </div>
-    <!-- Page Header Ends                              -->
+    <!-- Page Header Ends-->
     <!-- Page Body Start-->
     <div class="page-body-wrapper">
       <!-- Page Sidebar Start-->
@@ -180,7 +170,6 @@
                     <h6>Pinned</h6>
                   </div>
                 </li>
-
                 <li class="sidebar-main-title">
                   <div>
                     <h6 class="lan-1">General</h6>
@@ -218,7 +207,7 @@
                 </li>
                 <li class="sidebar-list">
                   <i class="fa-solid fa-thumbtack" style="color: rgb(255, 255, 255);"></i>
-                  <a class="sidebar-link sidebar-title link-nav" href="add-ProjectType.html">
+                  <a class="sidebar-link sidebar-title link-nav" href="list-ProjectType.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       viewBox="0 0 640 640">
                       <path
@@ -226,12 +215,6 @@
                     </svg>
                     <span>Projects Type</span></a>
                 </li>
-                <!-- <li class="sidebar-list">
-                      <i class="fa-solid fa-thumbtack" style="color: rgb(255, 255, 255);"></i>
-                      <a class="sidebar-link sidebar-title link-nav" href="list-Co-Ordinators-management.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 640 640"><path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM370.7 389.1L226.4 444.6C207 452.1 187.9 433 195.4 413.6L250.9 269.3C254.2 260.8 260.8 254.2 269.3 250.9L413.6 195.4C433 187.9 452.1 207 444.6 226.4L389.1 370.7C385.9 379.2 379.2 385.8 370.7 389.1zM352 320C352 302.3 337.7 288 320 288C302.3 288 288 302.3 288 320C288 337.7 302.3 352 320 352C337.7 352 352 337.7 352 320z"/></svg>                      
-                        <span>Co-Ordinators</span></a>
-                    </li> -->
                 <li class="sidebar-list">
                   <i class="fa-solid fa-thumbtack" style="color: rgb(255, 255, 255);"></i>
                   <a class="sidebar-link sidebar-title link-nav" href="Invoice-List.html">
@@ -348,19 +331,6 @@
                     </svg>
                     <span class="lan-6">Loan Incoming</span></a>
                 </li>
-                <!-- <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="list-project.html">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 640 640"><path d="M104 112C90.7 112 80 122.7 80 136L80 184C80 197.3 90.7 208 104 208L152 208C165.3 208 176 197.3 176 184L176 136C176 122.7 165.3 112 152 112L104 112zM256 128C238.3 128 224 142.3 224 160C224 177.7 238.3 192 256 192L544 192C561.7 192 576 177.7 576 160C576 142.3 561.7 128 544 128L256 128zM256 288C238.3 288 224 302.3 224 320C224 337.7 238.3 352 256 352L544 352C561.7 352 576 337.7 576 320C576 302.3 561.7 288 544 288L256 288zM256 448C238.3 448 224 462.3 224 480C224 497.7 238.3 512 256 512L544 512C561.7 512 576 497.7 576 480C576 462.3 561.7 448 544 448L256 448zM80 296L80 344C80 357.3 90.7 368 104 368L152 368C165.3 368 176 357.3 176 344L176 296C176 282.7 165.3 272 152 272L104 272C90.7 272 80 282.7 80 296zM104 432C90.7 432 80 442.7 80 456L80 504C80 517.3 90.7 528 104 528L152 528C165.3 528 176 517.3 176 504L176 456C176 442.7 165.3 432 152 432L104 432z"/></svg>
-                      <span class="lan-6">Project</span></a>
-                  </li>
-                  <li class="sidebar-list">
-                        <i class="fa-solid fa-thumbtack" style="color: rgb(255, 255, 255);"></i>
-                        <a class="sidebar-link sidebar-title link-nav active" href="file-manager.html">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 640 640"><path d="M192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 234.5C512 217.5 505.3 201.2 493.3 189.2L386.7 82.7C374.7 70.7 358.5 64 341.5 64L192 64zM453.5 240L360 240C346.7 240 336 229.3 336 216L336 122.5L453.5 240z"/></svg>  
-                          <span>File manager</span><div class="according-menu">
-                                <i class="fa-solid fa-angle-right"></i>
-                            </div>
-                        </a>
-                    </li> -->
               </ul>
             </div>
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
@@ -384,41 +354,38 @@
             <div class="col-sm-12">
               <div class="card shadow">
                 <div class="card-body">
-                  <form class="row g-3 needs-validation custom-input" novalidate="">
-                    <div class="col-md-6 position-relative">
+                  <form class="row g-3">
+                    <div class="col-md-6">
                       <label class="form-label">Company Name <span class="txt-danger">*</span></label>
                       <input class="form-control" type="text">
                     </div>
-                    <div class="col-md-6 position-relative">
+                    <div class="col-md-6">
                       <label class="form-label">Email</label>
                       <input class="form-control" type="email">
                     </div>
-                    <div class="col-md-6 position-relative">
+                    <div class="col-md-6">
                       <label class="form-label">Client Name</label>
                       <input class="form-control" type="text">
                     </div>
-                    <div class="col-md-6 position-relative">
+                    <div class="col-md-6">
                       <label class="form-label">Contact Number</label>
                       <input class="form-control" type="tel">
                     </div>
-                    <div class="col-md-6 position-relative">
+                    <div class="col-md-6">
                       <label class="form-label">Client Name 2</label>
                       <input class="form-control" type="text">
                     </div>
-                    <div class="col-md-6 position-relative">
+                    <div class="col-md-6">
                       <label class="form-label">Contact Number 2</label>
                       <input class="form-control" type="tel">
                     </div>
-
                     <div class="col-md-12">
                       <label class="form-label">Refference</label>
                       <input class="form-control" type="text">
                     </div>
                     <div class="col-md-12">
-                      <label class="form-label" for="validationWebsite">Website</label>
-                      <input class="form-control" id="validationWebsite" type="url">
-                      <div class="valid-feedback">
-                        Looks's Good!</div>
+                      <label class="form-label">Website</label>
+                      <input class="form-control" type="url">
                     </div>
                     <div class="card bg-offwhite p-3">
                       <h4 class="mb-4">Address Details </h4>
@@ -433,21 +400,6 @@
                               <option value="uk">United Kingdom</option>
                               <option value="ca">Canada</option>
                               <option value="au">Australia</option>
-                              <option value="de">Germany</option>
-                              <option value="fr">France</option>
-                              <option value="it">Italy</option>
-                              <option value="jp">Japan</option>
-                              <option value="br">Brazil</option>
-                              <option value="za">South Africa</option>
-                              <option value="cn">China</option>
-                              <option value="ru">Russia</option>
-                              <option value="ng">Nigeria</option>
-                              <option value="ar">Argentina</option>
-                              <option value="mx">Mexico</option>
-                              <option value="es">Spain</option>
-                              <option value="kr">South Korea</option>
-                              <option value="se">Sweden</option>
-                              <option value="nl">Netherlands</option>
                             </select>
                           </div>
                           <div class="col-md-6">
@@ -462,18 +414,6 @@
                               <option value="up">Uttar Pradesh</option>
                               <option value="wb">West Bengal</option>
                               <option value="ap">Andhra Pradesh</option>
-                              <option value="rj">Rajasthan</option>
-                              <option value="pb">Punjab</option>
-                              <option value="br">Bihar</option>
-                              <option value="mp">Madhya Pradesh</option>
-                              <option value="od">Odisha</option>
-                              <option value="hr">Haryana</option>
-                              <option value="jk">Jammu & Kashmir</option>
-                              <option value="kl">Kerala</option>
-                              <option value="as">Assam</option>
-                              <option value="jh">Jharkhand</option>
-                              <option value="cg">Chhattisgarh</option>
-                              <option value="ut">Uttarakhand</option>
                             </select>
                           </div>
                           <div class="col-md-6 mt-4">
@@ -485,21 +425,6 @@
                               <option value="bangalore">Bangalore</option>
                               <option value="ahmedabad">Ahmedabad</option>
                               <option value="chennai">Chennai</option>
-                              <option value="kolkata">Kolkata</option>
-                              <option value="pune">Pune</option>
-                              <option value="surat">Surat</option>
-                              <option value="hyderabad">Hyderabad</option>
-                              <option value="jaipur">Jaipur</option>
-                              <option value="indore">Indore</option>
-                              <option value="lucknow">Lucknow</option>
-                              <option value="bhopal">Bhopal</option>
-                              <option value="patna">Patna</option>
-                              <option value="vadodara">Vadodara</option>
-                              <option value="rajkot">Rajkot</option>
-                              <option value="amritsar">Amritsar</option>
-                              <option value="coimbatore">Coimbatore</option>
-                              <option value="nashik">Nashik</option>
-                              <option value="kanpur">Kanpur</option>
                             </select>
                           </div>
                           <div class="col-md-6 mt-4">
@@ -510,11 +435,6 @@
                             <label class="form-label">Address</label>
                             <textarea class="w-100 border-light-subtle rounded"></textarea>
                           </div>
-
-
-
-
-
                         </div>
                       </div>
                     </div>
@@ -522,31 +442,29 @@
                       <h4 class="mb-4">GST Details </h4>
                       <div class="container">
                         <div class="row">
-                          <div class="col-md-6 position-relative">
+                          <div class="col-md-6">
                             <label class="form-label">GST Number</label>
                             <input class="form-control" required="">
                           </div>
-                          <div class="col-md-6 position-relative">
+                          <div class="col-md-6">
                             <label class="form-label">GST Firm Name</label>
                             <input class="form-control" type="text">
                           </div>
-                          <div class="col-md-12 mt-2">
+                          <div class="col-md-12 mt-4">
                             <label class="form-label">GST Firm Address</label>
                             <textarea class="w-100 border-light-subtle rounded"></textarea>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-12 position-relative">
-                      <label class="form-label" for="validationTooltipRemarks">Remarks</label>
-                      <textarea name="" id="validationTooltipRemarks"
-                        class="w-100 border-light-subtle rounded"></textarea>
-                      <div class="invalid-tooltip">Looks good!</div>
+                    <div class="col-md-12">
+                      <label class="form-label">Remarks</label>
+                      <textarea class="w-100 border-light-subtle rounded"></textarea>
                     </div>
                   </form>
                 </div>
-                <div class="mb-2 text-center">
-                  <button class="btn btn-primary me-3" type="submit">Save</button>
+                <div class="mb-4 text-center">
+                  <button class="btn btn-primary" type="submit">Save</button>
                   <input class="btn btn-light" type="reset" value="Cancel">
                 </div>
               </div>
@@ -555,7 +473,6 @@
         </div>
         <!-- Container-fluid Ends-->
       </div>
-
       <!-- footer start-->
       <footer class="footer">
         <div class="container-fluid">
@@ -570,49 +487,6 @@
       </footer>
     </div>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const deleteLinks = document.querySelectorAll('.deleteItem');
-
-      deleteLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-          e.preventDefault(); // Prevent default anchor behavior
-
-          Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#16c7f9',
-            cancelButtonColor: '#fc4438',
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'Cancel'
-          }).then((result) => {
-            if (result.isConfirmed) {
-              // You can add your delete logic here
-              Swal.fire('Deleted!', 'Your item has been deleted.', 'success');
-            }
-          });
-        });
-      });
-    });
-  </script>
-  <script>
-    // Set default arrival date to today
-    const arrivalInput = document.getElementById('arrivalDate');
-    const renewInput = document.getElementById('renewDate');
-
-    const today = new Date();
-    const yearLater = new Date();
-    yearLater.setFullYear(today.getFullYear() + 1);
-
-    const formatDate = (date) => {
-      return date.toISOString().split('T')[0];
-    };
-
-    arrivalInput.value = formatDate(today);
-    renewInput.value = formatDate(yearLater);
-  </script>
   <!-- latest jquery-->
   <script>
     $(document).ready(function () {
@@ -666,5 +540,4 @@
   <script src="./assets/js/select2.full.min.js"></script>
   <script src="./assets/js/select2-init.js"></script>
 </body>
-
 </html>
